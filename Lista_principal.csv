@@ -1,321 +1,321 @@
-﻿;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;
-Status;Prefixo;Placa;Garagem / Local;Endereço;Bairro;Cidade;Cep ;Fabricante;Modelo;Chassi;"Ano
-Fabric./Model";Motor;RPM min;RPM max;Limite de opacidade
-;210024;EMS7482;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Fiat;Ducato;93W244F14B2053415;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;210025;EMS7483;Jaguaré;;;;;Fiat;Ducato;93W244F14B2053626;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;210053;EQT6605;Jaguaré;;;;;Iveco;Daily 35S14;93ZC35A01B8421221;2010/2010;FPT 2.3;850;4200;0,7 m⁻¹
-;210067;EQT6573;Jaguaré;;;;;Fiat;Ducato;93W244F14B2067213;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;210069;EQT6547;CTRSS;;;;;Fiat;Ducato;93W244F14B2067254;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;210070;EQT6549;Jaguaré;;;;;Fiat;Ducato;93W244F14B2067330;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;210072;EQT6613;Jaguaré;;;;;Volkswagen;17-250;9533N82T1BR118105;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;210073;EQT6604;Transbordo PP;;;;;Volkswagen;17-250;9533N82T2BR117996;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;210080;EQT6529;Jaguaré;;;;;Volkswagen;17-250;9533N82T7BR119906;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;210091;EQT6F48;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-250;9533N82T5BR121640;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;214137;FCO6310;Aterro Bandeirantes;;;;;Volkswagen;17-190;9533E8241FR506658;2014/2015;Cummins ISB;700;2500;1,5 m⁻¹
-;214138;FCS0J98;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-190;9533E824XFR506755;2014/2015;Cummins ISB;700;2500;1,5 m⁻¹
-;215023;GJW2A63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;953658242GR605195;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹
-;215090;GIZ6792;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G824XGR604437;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215109;GCU4A12;Aterro Bandeirantes;;;;;Volkswagen;5-150;9531M32P8GR604126;2015/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;215112;GCX6J54;Transbordo PP;;;;;Volkswagen;5-150;9531M32P6GR604142;2015/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;215114;FQY6J16;Aterro Bandeirantes;;;;;Volkswagen;5-150;9531M32P6GR604268;2015/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;219060;GEE0G84;Jaguaré;;;;;Volkswagen;24-260;9536J8240LR030696;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219061;GCV8749;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR029377;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219062;FZG3916;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8247LR028508;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219063;GEH6114;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248LR028663;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219064;GHT0638;Jaguaré;;;;;Volkswagen;24-260;9536J8242LR029548;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219065;FYD4768;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR028490;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219066;GHV9483;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR029900;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219067;GEX7334;Jaguaré;;;;;Volkswagen;24-260;9536J8241LR029976;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219068;GDD3074;Jaguaré;;;;;Volkswagen;24-260;9536J8244LR029521;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219069;GCN5638;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244LR029597;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219070;FFB1526;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR025166;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219071;FNK2346;Jaguaré;;;;;Volkswagen;24-260;9536J8247LR025057;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219072;GBL9804;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J824XLR025179;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219073;GFB3G84;Jaguaré;;;;;Volkswagen;24-260;9536J8246LR023574;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219074;BRY4J75;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB1LR027839;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;219075;CPN5J84;Jaguaré;;;;;Volkswagen;11-180;9535V6TB1LR027842;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;219076;FGW9D97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB4LR027849;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;219077;BIQ9J87;Jaguaré;;;;;Volkswagen;11-180;9535V6TB5LR027844;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;219078;BXW7G26;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB7LR027828;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;219079;CSJ0G39;Jaguaré;;;;;Volkswagen;11-180;9535V6TB8LR027854;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;219080;GAH9G27;Jaguaré;;;;;Volkswagen;24-260;95365824XLR029754;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219081;GEF7H16;CTRSS;;;;;Volkswagen;24-260;953658246LR030013;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219082;EHL6487;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8244LR029535;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219083;EQD3639;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8245LR029446;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219084;EQX4379;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8244LR029096;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219086;GBR6532;Jaguaré;;;;;Volkswagen;17-190;9536E8240LR029990;2019/2020;Cummins ISB;700;2500;1,5 m⁻¹
-;219104;GGW8F83;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8240LR032240;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219105;FXT3F16;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8241LR032117;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219106;CTC6A21;Jaguaré;;;;;Volkswagen;24-260;9536J8245LR029611;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219107;FCQ3B84;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245LR031925;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219108;GDP8C45;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245LR032086;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219109;GIU6B05;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8246LR031951;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219110;GBO5B32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8246LR032193;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219111;GDN3I34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8247LR031912;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219112;GDI8E56;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8249LR032074;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219113;EMY0G61;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8249LR032155;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219114;GDL6D51;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J824XLR032438;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219115;GHB0I27;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J824XLR032469;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219116;GFN4G91;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J824XLR032990;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219117;GFW9E41;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8240LR032447;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219118;GCJ1A32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8240LR032478;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219119;GHT8F13;Jaguaré;;;;;Volkswagen;24-260;9536J8241LR032523;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219120;GEQ8G64;Jaguaré;;;;;Volkswagen;24-260;9536J8241LR032635;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219121;FYS9I35;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR033669;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219122;FYM4E95;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8242LR033082;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219123;GFZ8H22;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8243LR032135;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219124;FZT0B52;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8243LR032488;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219125;GDV2E01;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR032555;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219126;FXW1E35;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR032975;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219127;FXB1C45;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR033057;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219128;EWW2H45;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244LR033004;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219129;FDD3E82;Jaguaré;;;;;Volkswagen;24-260;9536J8245LR032427;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219130;FZM6H84;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245LR032458;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;219131;GIK6J61;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8246LR032100;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219132;FHE0B67;Jaguaré;;;;;Volkswagen;24-260;9536J8247LR032509;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219133;FIY7B23;Jaguaré;;;;;Volkswagen;24-260;9536J8248LR032289;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219134;FOA5D04;Jaguaré;;;;;Volkswagen;24-260;9536J8248LR032499;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219135;DDS5G92;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032222;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219136;FWP6J03;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032575;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219137;GFT0E92;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR033032;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219138;DZA8B02;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032916;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;219139;EBV8I91;Jaguaré;;;;;Volkswagen;17-190;9536E8240LR035983;2019/2020;Cummins ISB;700;2500;1,5 m⁻¹
-;219140;FFD0H82;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-190;9536E8244LR035985;2019/2020;Cummins ISB;700;2500;1,5 m⁻¹
-OK;220000;GKD7F91;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J824XMR100755;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220001;GED8E24;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248MR100687;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220002;GIF5G63;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032902;2020/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220008;FNX4E52;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8245MR101974;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220009;FXN7H03;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8248MR101936;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220010;FKM6J41;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8244MR101917;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220011;GCH4B77;Jaguaré;;;;;Volkswagen;17-260;9536J8244MR101996;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220012;FPN4J42;Jaguaré;;;;;Volkswagen;17-260;9536J8241MR101986;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220013;FZB4C21;Jaguaré;;;;;Volkswagen;17-260;9536J8242MR102015;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220014;GCN1D82;Jaguaré;;;;;Volkswagen;17-260;9536J8243MR102279;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220015;FSO4H76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8243MR102329;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220016;FHH9H06;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8243MR102430;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220017;FVD2I34;Jaguaré;;;;;Volkswagen;17-260;9536J8248MR102794;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220018;FYS1D52;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;17-260;9536J8244MR102081;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220019;FWH2D32;Jaguaré;;;;;Volkswagen;17-260;9536J8248MR102150;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220020;FCM8A73;Jaguaré;;;;;Volkswagen;17-260;9536J8243MR102444;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220021;FKP4G98;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8246MR101790;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220022;GJJ3A22;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245MR102123;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220023;FNK4G34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8247MR102138;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220024;GJZ0G41;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8240MR101851;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220025;FGA9F62;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244MR101870;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220026;FPT6F83;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248MR102228;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220027;FSY3F91;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8241MR102202;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220028;FQL1H94;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248MR102312;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220029;GGD1H94;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244MR102713;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220030;GCJ6B83;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245MR102462;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220031;FSC7B25;Jaguaré;;;;;Volkswagen;24-260;9536J8245MR102607;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;220032;DZI0F89;Jaguaré;;;;;Volkswagen;24-260;9536J8249MR102173;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220033;GHP4D65;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8240MR100554;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220034;CQU7D24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8242MR100720;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;220035;FXZ1J53;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8249MR100665;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221025;GBB2D27;Jaguaré;;;;;Volkswagen;11-180;9535V6TBXNR022531;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;221026;GCD0B93;Jaguaré;;;;;Volkswagen;11-180;9535V6TB2NR022524;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;221027;GEL6C32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB5NR022551;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;221028;GKG7B25;Jaguaré;;;;;Volkswagen;11-180;9535V6TB7NR022244;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;221029;GAO4J76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB7NR022521;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;221030;GHV2E56;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB7NR022535;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;221031;FGL1C31;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR030012;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221034;GJW8G27;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR029928;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221035;FYH3D92;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR031106;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221036;GIV7A04;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR029891;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221037;FKB5I06;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR029910;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221038;GIK6C31;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR029396;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221039;GGC3I73;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR029415;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221040;GDY7H85;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR029794;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221041;FXE7E17;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR030234;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221042;FMY3H34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8248NR030395;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221043;GHK3H57;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8249NR029837;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221044;FCI1G05;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR029913;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221045;FET6C76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR030317;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221046;DVJ1G73;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR033873;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221047;DID6C01;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR033887;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221048;GBB3I62;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8243NR031034;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221049;GIU3C63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8243NR033852;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221050;GBP4I07;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR034123;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221051;GBL0E54;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8248NR029764;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221052;GET9I73;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8248NR033751;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221053;GDE6C16;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8249NR029921;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221054;GJX3I25;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR034982;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221055;GEM9G23;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR035002;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221056;GEP9B93;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR033839;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221057;GCH2D87;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR035017;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221058;GIU8D24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8243NR035469;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221059;GJB1C67;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8244NR033939;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221060;GDW6I63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR034802;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221061;GBN3E57;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8246NR035160;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221062;GDH7H14;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR033952;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221063;GEA6D36;Jaguaré;;;;;Volkswagen;24-260;9536K8247NR034194;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221064;GDJ3E75;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR035457;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221065;GIY6F26;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8248NR034818;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221066;GBM6I04;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8249NR035041;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221067;GEY9H53;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8249NR035248;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221068;GHB6B52;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR033990;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221069;GGJ5G91;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8249NR034097;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221070;GDE4G86;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR034053;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221071;GFY0I74;Jaguaré;;;;;Volkswagen;24-260;9536K8248NR033913;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221072;GFL4J13;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR033977;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221073;GBU6A76 ;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR034832;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221074;GBN0G85;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035030;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221075;GJD6J07;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR035205;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221076;GEY2F46;Jaguaré;;;;;Volkswagen;24-260;9536K8249NR035220;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221077;GAI0J64;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR035879;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221078;GHB8C34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR036418;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221079;GHI3F23;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8243NR035231;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221080;GFG4E97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8248NR035239;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221081;GAW1H45;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR035292;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221082;GHU6I35;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8241NR035342;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221083;GEQ9G35;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035481;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221084;GJU8H51;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR035503;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221085;GFW9A86;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR035257;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221086;GJY4G46;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8242NR035270;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221087;GIX8C73;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8247NR035491;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221088;GHR8B24 ;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR035280;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221089;EGK4D36;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8246NR035594;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221090;GES2H53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035612;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221091;GIK7C36;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035304;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221092;GGH3D07;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035626;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221093;GJQ4H52;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR035445;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221094;GHZ7D53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR035515;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221095;GFT4J25;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR035529;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221096;GEC9A24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR035563;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221097;GAQ7B51;Jaguaré;;;;;Volkswagen;24-260;9536K8248NR035578;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221098;GGS2G32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR036849;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221099;GHA6E27;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8243NR037173;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221100;GJC9B66;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR036381;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221101;GCY1B26;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR035913;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221103;GDP1J44;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8245NR036431;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221104;GFQ9J06;Jaguaré;;;;;Volkswagen;24-260;9536K8241NR037043;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221105;GAG4J51;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR037361;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221106;GKA6J75;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR037091;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;221107;GJP4H31;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8247NR037161;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;221108;GHX0I26;Jaguaré;;;;;Volkswagen;17-260;9536K8240NR035008;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;298031;EEH1022;Jaguaré;;;;;Fiat;Ducato;93W244F1392035957;2008/2009;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;298040;EEU5895;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Fiat;Ducato;93W244F1392036221;2008/2009;F1A Multijet 2.3;850;4000;0,7 m⁻¹
-;2113612;ENZ6I51;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR926613;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113622;EGT6D22;Jaguaré;;;;;Volkswagen;3-150;9535PFTE8KR926474;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113632;DUL5F31;Jaguaré;;;;;Volkswagen;3-150;9535PFTE2KR926924;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113642;BYI0C72;Jaguaré;;;;;Volkswagen;3-150;9535PFTEXKR926623;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113652;BXD8A61;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR927122;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113662;BYY7D97;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR927258;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113672;DTP7E28;Jaguaré;;;;;Volkswagen;3-150;9535PFTE8KR926877;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113682;ECO9F77;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR927146;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113692;EZZ7B87;Jaguaré;;;;;Volkswagen;3-150;9535PFTE3KR926897;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113702;FFQ9D36;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1KR927126;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113712;FJI1G88;Jaguaré;;;;;Volkswagen;3-150;9535PFTE5KR922740;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113722;ESP5D08;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR922819;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113732;CFY7D36;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1KR926610;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113742;EOO1F25;Jaguaré;;;;;Volkswagen;3-150;9535PFTEXKR926881;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113752;EXN4C76;Jaguaré;;;;;Volkswagen;3-150;9535PFTE0KR926470;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113762;EWD2B65;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6KR927252;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113772;BPO1G43;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR923247;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113782;FCS5A54;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6KR926635;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113792;FXD5J44;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR926441;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113802;EYL9D43;Jaguaré;;;;;Volkswagen;3-150;9535PFTE5KR926867;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113812;BSY8I14;Jaguaré;;;;;Volkswagen;3-150;9535PFTE3KR927371;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113822;EZO7F99;Jaguaré;;;;;Volkswagen;3-150;9535PFTE2KR926891;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113832;FCL2H69;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR926861;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113842;BYQ1J00;Jaguaré;;;;;Volkswagen;3-150;9535PFTE9KR926872;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113852;EOC0F20;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR926438;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2113862;DEM3H29;Jaguaré;;;;;Volkswagen;3-150;9535PFTE8KR926944;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2115052;ELY3E74;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1LR009328;2019/2020;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2115912;GHB0I17;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6MR100399;2020/2021;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2116822;JAE6A29;Transbordo PP;;;;;Volkswagen;25-360;9536R8275MR117692;2020/2021;Cummins ISC;650;2100;1,2 m⁻¹
-;2118302;GJO0I55;Jaguaré;;;;;Volkswagen;3-150;9535PFTE5NR036745;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2118312;FLR0J05;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4NR028491;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2118322;FWB7H07;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4NR039913;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2118332;GBZ4F34;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1NR034068;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2118342;GEE5D42;Jaguaré;;;;;Volkswagen;3-150;9535PFTE0NR040329;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2118352;GAE8G84;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6NR044532;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;2119162;FKC6D12;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8247PR029287;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2119172;FXF5I22;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8241PR029799;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2119182;FJF9J34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8241PR029172;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2119192;FYD4D76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8240PR029812;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2119202;FWZ1F73;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8246PR029457;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;222021;FKW8A24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR048134;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;222022;FQM1B34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR046286;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;222024;FVN2F56;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR046796;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;222020;FGL2G15;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR046822;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;222019;FCV8D05;Jaguaré;;;;;Volkswagen;24-260;9536K8243NR045578;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;222018;FPC3A85;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR049905;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;222023;GBN6A13;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR046233;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215096;GBZ8F44;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8244GR604692;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215092;FWB5D92;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8242GR603976;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215093;FQS8D03;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8247GR604489;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215094;GCV2H24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8240GR605550;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215097;GGA7B63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8245GR604913;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215088;GDI9G80;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8242GR604139;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;215076;GGB4623;Jaguaré;;;;;Volkswagen;17-280;953658241GR605298;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹
-;213133;FLG2B52;Aterro Bandeirantes;;;;;Volkswagen;10-160;9531M62P5DR357504;2013/2014;MWM 4.10 TCA;700;2500;2,1 m⁻¹
-;215055;GDA2948;Aterro Bandeirantes;;;;;Volkswagen;17-280;953658247GR605659;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹
-;215073;GEV4A57;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;953658248GR605928;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹
-;215102;GCZ9B50;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8245GR603809;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;215085;FTJ8G28;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;95365824XFR507045;2015/2015;Cummins ISL;650;2200;1,2 m⁻¹
-;2120572;JAU2D10;Transbordo PP;;;;;Volkswagen;25-360;953638277NR023686;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
-;2120582;JBB3G90;Transbordo PP;;;;;Volkswagen;25-360;9536R8275NR045068;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
-;2120562;JAU2A87;Transbordo PP;;;;;Volkswagen;25-360;953638278NR022840;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
-;2122602;FZL5H31;Jaguaré;;;;;Volkswagen;18-260;9536B8TD8SR013381;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122612;GJN0G21;Jaguaré;;;;;Volkswagen;18-260;9536B8TDXSR013379;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122622;SWR3F03;Jaguaré;;;;;Volkswagen;18-260;9536B8TDXSR012958;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122652;SSU4E64;Jaguaré;;;;;Volkswagen;18-260;9536B8TD9SR013308;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122662;STJ0I64;Jaguaré;;;;;Volkswagen;18-260;9536B8TD8SR013459;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122692;STT9C04;Jaguaré;;;;;Volkswagen;18-260;9536B8TD6SR013203;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122702;STY3B83;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TDXSR013608;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122722;SUY7H53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD8SR012845;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122732;SWR3A13;Jaguaré;;;;;Volkswagen;18-260;9536B8TD9SR013213;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122792;SKE7H39;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD9SR011655;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122812;SKE9G08;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD9SR012109;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122822;STF3F74;Jaguaré;;;;;Volkswagen;18-260;9536B8TD6SR013069;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122832;SWB2D53;Jaguaré;;;;;Volkswagen;18-260;9536B8TD5SR013547;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;2122642;SKE5C62;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD7SR020807;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;2122672;STL7J94;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD4SR012776;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;2122682;STQ0J43;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD3SR013384;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;2122712;SUI9F45;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD3SR016981;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;2122742;SKE0D21;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;18-260;9536B8TD9SR011381;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122752;SKE0E23;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TDXSR011356;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-OK;2122762;SKE2J97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD8SR011307;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122772;SKE5B29;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD9SR011784;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122782;SKE5D25;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TDXSR011390;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122802;SKE8G96;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD8SR011369;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2122632;TAQ5D75;Jaguaré;;;;;Volkswagen;18-260;9536B8TD5SR015105;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123232;SSR0H27;Jaguaré;;;;;Volkswagen;26-260;9536B8TD6SR021267;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123242;SSR0H52;Jaguaré;;;;;Volkswagen;26-260;9536B8TD3SR001414;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123252;SSR0I87;Jaguaré;;;;;Volkswagen;26-260;9536B8TD8SR020931;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123262;SSR1C42;Jaguaré;;;;;Volkswagen;26-260;9536B8TD4SR020618;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123272;SSR1D32;Transbordo PP;;;;;Volkswagen;26-260;9536B8TDXSR020302;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123282;SSR1E74;Jaguaré;;;;;Volkswagen;26-260;9536B8TD5SR001169;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123292;SSR1E81;CTRSS;;;;;Volkswagen;26-260;9536B8TD2SR001162;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123302;SSR1F36;CTRSS;;;;;Volkswagen;26-260;9536B8TD6SR020605;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123312;SSR0E95;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;26-260;9536B8TD1SR001198;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123322;SSR1C04;Jaguaré;;;;;Volkswagen;26-260;9536B8TD2SR001405;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123332;SSR1C73;Jaguaré;;;;;Volkswagen;26-260;9536B8TD2SR001176;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123352;SSR1E33;Jaguaré;;;;;Volkswagen;26-260;9536B8TD4SR001440;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹
-;2123112;TLM2J72;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB9SR025853;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;2123122;TMC6B61;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB0SR025644;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123132;TLL9A53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB5SR025669;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123142;TLS3E74;Jaguaré;;;;;Volkswagen;11-180;9535E6TB5SR025672;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;2123152;TMF9E05;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;11-180;9535E6TB7SR025642;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123162;TMH8A76;Jaguaré;;;;;Volkswagen;11-180;9535E6TB5SR025848;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123172;TLS6B08;Jaguaré;;;;;Volkswagen;11-180;9535E6TB6SR025647;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123182;TJW9G99;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB9SR025674;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;2123192;TJK4C27;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TBXSR025795;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;2123202;TMI7D06;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB9SR026095;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123212;TKC7A70;Jaguaré;;;;;Volkswagen;11-180;9535E6TB7SR024880;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2123222;TLY9F90;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB7SR024894;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;216001;GDJ0968;Jaguaré;;;;;Volkswagen;5-150;9531M32PXGR604144;2016/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹
-;214096;FGL3B84;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;953658243FR501166;2014/2015;Cummins ISL;650;2200;1,2 m⁻¹
-;225004;UEY4I14;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB7TR002556;2025/2026;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-OK;225005;UDT6F61;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB8TR002520;2025/2026;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;225006;UDC9B00;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB4TR002398;2025/2026;Cummins ISF 3.8;700;2600;1,5 m⁻¹
-;2124942;TEN3H70;Aterro Bandeirantes;;;;;Ford;Transit B41LMMB;WF0GTTBF7TU019244;2025/2026;Panther 2.0 EcoBlue;800;3800;0,5 m⁻¹
-;2124962;TET5C38;Jaguaré;;;;;Ford;Transit B41LMMB;WF0GTTBF3TU019810;2025/2026;Panther 2.0 EcoBlue;800;3800;0,5 m⁻¹
-;2124952;TET5C39;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Ford;Transit B41LMMB;WF0GTTBF5TU019243;2025/2026;Panther 2.0 EcoBlue;800;3800;0,5 m⁻¹
-;225166;UFW2C20;Aterro Bandeirantes;;;;;Volkswagen;31-320;9536C8TL9TR018000;2025/2026;Cummins ISC;650;2100;1,2 m⁻¹
-;2125742;JAZ0H59;Transbordo PP;;;;;Volkswagen;25-360;9536R8271NR040630;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
-;2125752;JAZ1J89;Transbordo PP;;;;;Volkswagen;25-360;9536R8274NR040878;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
-;2125762;JAY0A85;Transbordo PP;;;;;Volkswagen;25-360;9536R8279NR037023;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
-;2125922;JBC1E68;Transbordo PP;;;;;Volkswagen;25-360;9536R8273NR044548;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+Status;Prefixo;Placa;Garagem / Local;Endereço;Bairro;Cidade;Cep ;Fabricante;Modelo;Chassi;"Ano;Link Laudo
+Fabric./Model";Motor;RPM min;RPM max;Limite de opacidade;;;
+;210024;EMS7482;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Fiat;Ducato;93W244F14B2053415;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;210025;EMS7483;Jaguaré;;;;;Fiat;Ducato;93W244F14B2053626;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;210053;EQT6605;Jaguaré;;;;;Iveco;Daily 35S14;93ZC35A01B8421221;2010/2010;FPT 2.3;850;4200;0,7 m⁻¹;
+;210067;EQT6573;Jaguaré;;;;;Fiat;Ducato;93W244F14B2067213;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;210069;EQT6547;CTRSS;;;;;Fiat;Ducato;93W244F14B2067254;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;210070;EQT6549;Jaguaré;;;;;Fiat;Ducato;93W244F14B2067330;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;210072;EQT6613;Jaguaré;;;;;Volkswagen;17-250;9533N82T1BR118105;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;210073;EQT6604;Transbordo PP;;;;;Volkswagen;17-250;9533N82T2BR117996;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;210080;EQT6529;Jaguaré;;;;;Volkswagen;17-250;9533N82T7BR119906;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;210091;EQT6F48;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-250;9533N82T5BR121640;2010/2010;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1uAPMZUOgdFdGYipImSXP9ENDlEyzprZY/view?usp=sharing
+;214137;FCO6310;Aterro Bandeirantes;;;;;Volkswagen;17-190;9533E8241FR506658;2014/2015;Cummins ISB;700;2500;1,5 m⁻¹;
+;214138;FCS0J98;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-190;9533E824XFR506755;2014/2015;Cummins ISB;700;2500;1,5 m⁻¹;
+;215023;GJW2A63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;953658242GR605195;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹;
+;215090;GIZ6792;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G824XGR604437;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215109;GCU4A12;Aterro Bandeirantes;;;;;Volkswagen;5-150;9531M32P8GR604126;2015/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;215112;GCX6J54;Transbordo PP;;;;;Volkswagen;5-150;9531M32P6GR604142;2015/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;215114;FQY6J16;Aterro Bandeirantes;;;;;Volkswagen;5-150;9531M32P6GR604268;2015/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;219060;GEE0G84;Jaguaré;;;;;Volkswagen;24-260;9536J8240LR030696;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219061;GCV8749;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR029377;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1EBoIVeGttwFF1Fkx_0xivFToyAETfgU0/view?usp=sharing
+OK;219062;FZG3916;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8247LR028508;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1f7DQyu2_T0fQek3EzVjdmnt7aTXr91a0/view?usp=sharing
+OK;219063;GEH6114;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248LR028663;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1RBb2Jf9ODlEgwebdE0E-rZ3FPk0TaSNs/view?usp=sharing
+;219064;GHT0638;Jaguaré;;;;;Volkswagen;24-260;9536J8242LR029548;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219065;FYD4768;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR028490;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219066;GHV9483;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR029900;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1jwuuAvSg9PMACQiOQhTh8RJ20NWX7NDl/view?usp=sharing
+;219067;GEX7334;Jaguaré;;;;;Volkswagen;24-260;9536J8241LR029976;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219068;GDD3074;Jaguaré;;;;;Volkswagen;24-260;9536J8244LR029521;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219069;GCN5638;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244LR029597;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Wo3vHyABBENB4pGAqIOgSvZ-6n7Sm2Ud/view?usp=sharing
+OK;219070;FFB1526;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR025166;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1ZaF7DrqEb6z4wowD9ItN1f3zqmCrbU09/view?usp=sharing
+;219071;FNK2346;Jaguaré;;;;;Volkswagen;24-260;9536J8247LR025057;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219072;GBL9804;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J824XLR025179;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1gYIBvDcwXxoQlIgI28ZlvctPXAg9BqSv/view?usp=sharing
+;219073;GFB3G84;Jaguaré;;;;;Volkswagen;24-260;9536J8246LR023574;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219074;BRY4J75;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB1LR027839;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/15Ki4qH10hx5QgeFiwNFY7gYvJxxX_lyK/view?usp=sharing
+OK;219075;CPN5J84;Jaguaré;;;;;Volkswagen;11-180;9535V6TB1LR027842;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/12yHJ5vdhKkcpoCWrBJp1oqZR_wgobqNb/view?usp=sharing
+OK;219076;FGW9D97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB4LR027849;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1mLaG3sdK0lxEqu9vDbd0Imtb4a2z-n67/view?usp=sharing
+;219077;BIQ9J87;Jaguaré;;;;;Volkswagen;11-180;9535V6TB5LR027844;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;219078;BXW7G26;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB7LR027828;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;219079;CSJ0G39;Jaguaré;;;;;Volkswagen;11-180;9535V6TB8LR027854;2019/2020;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;219080;GAH9G27;Jaguaré;;;;;Volkswagen;24-260;95365824XLR029754;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219081;GEF7H16;CTRSS;;;;;Volkswagen;24-260;953658246LR030013;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219082;EHL6487;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8244LR029535;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219083;EQD3639;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8245LR029446;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219084;EQX4379;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8244LR029096;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219086;GBR6532;Jaguaré;;;;;Volkswagen;17-190;9536E8240LR029990;2019/2020;Cummins ISB;700;2500;1,5 m⁻¹;
+;219104;GGW8F83;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8240LR032240;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219105;FXT3F16;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8241LR032117;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/19I_xYZGVsNZAZvNDzhL06BI7vI4O0EqQ/view?usp=sharing
+;219106;CTC6A21;Jaguaré;;;;;Volkswagen;24-260;9536J8245LR029611;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219107;FCQ3B84;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245LR031925;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1gAZOAPmDWLme9C-CrAAGpcuYjgX2qIZr/view?usp=sharing
+OK;219108;GDP8C45;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245LR032086;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1AxTm61d5ow3P3jOJ4oMdWL6X3nkCvF6o/view?usp=sharing
+;219109;GIU6B05;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8246LR031951;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219110;GBO5B32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8246LR032193;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219111;GDN3I34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8247LR031912;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219112;GDI8E56;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8249LR032074;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1R-Mmgt5ki4b96GTBl1B4taRK5VRvZja5/view?usp=sharing
+OK;219113;EMY0G61;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8249LR032155;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/17WpYKY6OLvX1cBxjNC7JriazjVDj9WtD/view?usp=sharing
+OK;219114;GDL6D51;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J824XLR032438;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1YaC1-xASNiOG8tHl44QIAMFwVW9AiRdS/view?usp=sharing
+OK;219115;GHB0I27;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J824XLR032469;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1YSv-2Cu7JM8brOmWJp5VkrX8Ury_JE6l/view?usp=sharing
+;219116;GFN4G91;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J824XLR032990;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219117;GFW9E41;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8240LR032447;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Z-oVDwlgYfiC6rHa8hniCVOydpuw-7DP/view?usp=sharing
+OK;219118;GCJ1A32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8240LR032478;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1tL5uBk7goG34r4Xb8X6qKZ7mGXLDfn94/view?usp=sharing
+;219119;GHT8F13;Jaguaré;;;;;Volkswagen;24-260;9536J8241LR032523;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219120;GEQ8G64;Jaguaré;;;;;Volkswagen;24-260;9536J8241LR032635;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219121;FYS9I35;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8241LR033669;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Td97cpw3GRU_VOHB216_of9KBjYQBNnc/view?usp=sharing
+OK;219122;FYM4E95;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8242LR033082;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1AM3wJ_JiViKG2Z33MR-8Xm67fcy8eJOF/view?usp=sharing
+OK;219123;GFZ8H22;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8243LR032135;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1XpFOO7-hGNyZbq2FtUrS6hiTYVbHHEJh/view?usp=sharing
+OK;219124;FZT0B52;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8243LR032488;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/10WLNd0qGkrUft7bQg2lAL_Ggn85qHazq/view?usp=sharing
+;219125;GDV2E01;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR032555;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219126;FXW1E35;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR032975;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219127;FXB1C45;Jaguaré;;;;;Volkswagen;24-260;9536J8243LR033057;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219128;EWW2H45;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244LR033004;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1VTo0LyUCBh8Jy9SHLbqlZSEiOw7s2VhX/view?usp=sharing
+;219129;FDD3E82;Jaguaré;;;;;Volkswagen;24-260;9536J8245LR032427;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;219130;FZM6H84;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245LR032458;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/19FMhVaof6U7Hii-O5t8YAKmjdIMu-cr0/view?usp=sharing
+OK;219131;GIK6J61;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8246LR032100;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1vmJd9pDuc8E0FDho2W81ZIOTOgUR6iBy/view?usp=sharing
+;219132;FHE0B67;Jaguaré;;;;;Volkswagen;24-260;9536J8247LR032509;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219133;FIY7B23;Jaguaré;;;;;Volkswagen;24-260;9536J8248LR032289;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219134;FOA5D04;Jaguaré;;;;;Volkswagen;24-260;9536J8248LR032499;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219135;DDS5G92;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032222;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219136;FWP6J03;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032575;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219137;GFT0E92;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR033032;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219138;DZA8B02;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032916;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;219139;EBV8I91;Jaguaré;;;;;Volkswagen;17-190;9536E8240LR035983;2019/2020;Cummins ISB;700;2500;1,5 m⁻¹;
+;219140;FFD0H82;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-190;9536E8244LR035985;2019/2020;Cummins ISB;700;2500;1,5 m⁻¹;
+OK;220000;GKD7F91;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J824XMR100755;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1k9UIDYqeFW9LFS5q_22rPCcVg4Ys4hkW/view?usp=sharing
+OK;220001;GED8E24;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248MR100687;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1XgsrnsZ2whrj37R3veQGgzKOKh5qMujH/view?usp=sharing
+;220002;GIF5G63;Jaguaré;;;;;Volkswagen;24-260;9536J8249LR032902;2020/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220008;FNX4E52;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8245MR101974;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220009;FXN7H03;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8248MR101936;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220010;FKM6J41;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8244MR101917;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220011;GCH4B77;Jaguaré;;;;;Volkswagen;17-260;9536J8244MR101996;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220012;FPN4J42;Jaguaré;;;;;Volkswagen;17-260;9536J8241MR101986;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220013;FZB4C21;Jaguaré;;;;;Volkswagen;17-260;9536J8242MR102015;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220014;GCN1D82;Jaguaré;;;;;Volkswagen;17-260;9536J8243MR102279;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220015;FSO4H76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8243MR102329;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220016;FHH9H06;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536J8243MR102430;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220017;FVD2I34;Jaguaré;;;;;Volkswagen;17-260;9536J8248MR102794;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;220018;FYS1D52;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;17-260;9536J8244MR102081;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/144ReQUVpI90rkhV1Usrmd5Qy6orxDTfr/view?usp=sharing
+;220019;FWH2D32;Jaguaré;;;;;Volkswagen;17-260;9536J8248MR102150;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220020;FCM8A73;Jaguaré;;;;;Volkswagen;17-260;9536J8243MR102444;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;220021;FKP4G98;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8246MR101790;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1XHJR0DJu2OrPo7PzrjdVrpK22-hUY3gK/view?usp=sharing
+OK;220022;GJJ3A22;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245MR102123;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1-NIxOEHYc8bWyuo8rHBG0IQjRrzB9lTB/view?usp=sharing
+;220023;FNK4G34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8247MR102138;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;220024;GJZ0G41;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8240MR101851;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1LVv5pcfCz_UoOpJ2VaqDYK44QMFMn5Ih/view?usp=sharing
+OK;220025;FGA9F62;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244MR101870;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1JzwZMZn9UqaipKxetDuH5kpDt6TFXbiv/view?usp=sharing
+OK;220026;FPT6F83;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248MR102228;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1CSzTsoySQ7dN6W9Dc3wPZVTBfyytu2e3/view?usp=sharing
+;220027;FSY3F91;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8241MR102202;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;220028;FQL1H94;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8248MR102312;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1reh6jqre1xXR2prMlTwRjkKdJlRTzfGx/view?usp=sharing
+OK;220029;GGD1H94;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8244MR102713;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1T9cKAsC4r3KV1TzX4OqZ4WFJ40wFf6QF/view?usp=sharing
+OK;220030;GCJ6B83;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8245MR102462;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1roi49dw4ow1wIRbE2upIsZ0IwSg5BAd5/view?usp=sharing
+;220031;FSC7B25;Jaguaré;;;;;Volkswagen;24-260;9536J8245MR102607;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;220032;DZI0F89;Jaguaré;;;;;Volkswagen;24-260;9536J8249MR102173;2020/2021;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;220033;GHP4D65;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8240MR100554;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1dl6ZaexnyMnqneJrIqoLB-FG9egX7JoP/view?usp=sharing
+OK;220034;CQU7D24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536J8242MR100720;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1HOtQ2n0v6QxL01HwWCuUFrniga03G1XH/view?usp=sharing
+OK;220035;FXZ1J53;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536J8249MR100665;2019/2020;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1G5D9VqO4PoBRq2oLFRdTLO4BB0ThSD1u/view?usp=sharing
+;221025;GBB2D27;Jaguaré;;;;;Volkswagen;11-180;9535V6TBXNR022531;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;221026;GCD0B93;Jaguaré;;;;;Volkswagen;11-180;9535V6TB2NR022524;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+OK;221027;GEL6C32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB5NR022551;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1mQ6ZQiMev05VqfAeTEZ5VZaRM-BnB9SE/view?usp=sharing
+;221028;GKG7B25;Jaguaré;;;;;Volkswagen;11-180;9535V6TB7NR022244;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;221029;GAO4J76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB7NR022521;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+OK;221030;GHV2E56;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535V6TB7NR022535;2021/2022;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1bUBq-HoRTx76vHSsc_dtl_aytqBxsOHS/view?usp=sharing
+OK;221031;FGL1C31;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR030012;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1qmlzAH_EiqBMwMK0AG50_DFsRrj73A2R/view?usp=sharing
+OK;221034;GJW8G27;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR029928;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1QulCYZH7Qeqsc3zgmohxnv3JttcAD3Dm/view?usp=sharing
+;221035;FYH3D92;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR031106;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221036;GIV7A04;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR029891;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1y0XJUs_NxSKkX0_VUltWCt10F1Wq3HQh/view?usp=sharing
+;221037;FKB5I06;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR029910;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221038;GIK6C31;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR029396;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/19XQHYYme9ZGpQZrBIiLYvx0ZYkxalJTI/view?usp=sharing
+OK;221039;GGC3I73;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR029415;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1zr_soaj2HdWSjld9FVDC9V87oHwCt5Dp/view?usp=sharing
+OK;221040;GDY7H85;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR029794;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1DO6-RNygfJxXmL3IKvNINRmyiX8m48JF/view?usp=sharing
+OK;221041;FXE7E17;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR030234;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Hj1NCx5QOvPNTpuybhig3M9pbOWT6jTh/view?usp=sharing
+;221042;FMY3H34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8248NR030395;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221043;GHK3H57;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8249NR029837;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221044;FCI1G05;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR029913;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221045;FET6C76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR030317;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221046;DVJ1G73;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR033873;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1XjdQM2f7xTuMaD6ffYZpxV8HEo1F_0DA/view?usp=sharing
+OK;221047;DID6C01;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR033887;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1UhenhaNWPO5FYEKCP1n3eKaW8oYvY4rH/view?usp=sharing
+OK;221048;GBB3I62;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8243NR031034;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1oxsKfdQ4D6AO5ciy3LGIXo4kI4jFkxAG/view?usp=sharing
+OK;221049;GIU3C63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8243NR033852;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1_3i0D_casEavR9ZhNWmmHOsn8Hl6mPih/view?usp=sharing
+OK;221050;GBP4I07;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR034123;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1EZ6f5VB1z6j8baWzyeDjnnwPec_Ix_f2/view?usp=sharing
+OK;221051;GBL0E54;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8248NR029764;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1JaCfdU4eiBfW7xWEAF0xQNm2T9KxQ2NX/view?usp=sharing
+OK;221052;GET9I73;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8248NR033751;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/13POmAtzIUMuL_PuO0vziwjE6u-z3omOd/view?usp=sharing
+OK;221053;GDE6C16;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8249NR029921;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/17J-pLPJ1L6LaOH7JLKI68PPqXfRFtwt7/view?usp=sharing
+;221054;GJX3I25;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR034982;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221055;GEM9G23;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR035002;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221056;GEP9B93;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR033839;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221057;GCH2D87;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR035017;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Fvs-FtDKGFA7LqOSShIQcnodaxVONWg4/view?usp=sharing
+OK;221058;GIU8D24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8243NR035469;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1hIZFGCHj9K97FviHPkXf6TVDBX5eHTP2/view?usp=sharing
+OK;221059;GJB1C67;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8244NR033939;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1J_OKE566r8fS1ztr3hQy4syHlYFN5II-/view?usp=sharing
+;221060;GDW6I63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR034802;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221061;GBN3E57;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8246NR035160;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1RXBIyc20cxpZ9aHGKpj70iQGQsoq4Quk/view?usp=sharing
+;221062;GDH7H14;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR033952;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221063;GEA6D36;Jaguaré;;;;;Volkswagen;24-260;9536K8247NR034194;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221064;GDJ3E75;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR035457;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221065;GIY6F26;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8248NR034818;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221066;GBM6I04;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8249NR035041;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1unBo2yAzOfpnUzefonUkMrFNn9ryIa4C/view?usp=sharing
+OK;221067;GEY9H53;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8249NR035248;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1rbeRGWDatehjXfU-XNS8fdu0PmQwGWoo/view?usp=sharing
+OK;221068;GHB6B52;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR033990;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1W-jySoWsxRjRcFjlYvttfpdOQWVv57bG/view?usp=sharing
+OK;221069;GGJ5G91;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8249NR034097;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1r7N6QXqKvVbT0Xbfc7bgSmmkSOWoJ73p/view?usp=sharing
+;221070;GDE4G86;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR034053;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221071;GFY0I74;Jaguaré;;;;;Volkswagen;24-260;9536K8248NR033913;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221072;GFL4J13;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR033977;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1QN1XhzBtU_-2P0gO7V_xUfx7I_j54G1s/view?usp=sharing
+;221073;GBU6A76 ;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR034832;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221074;GBN0G85;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035030;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1RBxfJtraGaaVnnBa6fNaaqvuft8CF3ec/view?usp=sharing
+;221075;GJD6J07;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR035205;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221076;GEY2F46;Jaguaré;;;;;Volkswagen;24-260;9536K8249NR035220;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221077;GAI0J64;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR035879;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221078;GHB8C34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8242NR036418;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1VWPO70GhZm8t10zru-P3Ylftqj-p7BFk/view?usp=sharing
+OK;221079;GHI3F23;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8243NR035231;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1YwuJjOdoNnKbLXisPfFbyiWUzXMcmxVp/view?usp=sharing
+;221080;GFG4E97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8248NR035239;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221081;GAW1H45;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR035292;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221082;GHU6I35;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8241NR035342;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1DhpilRBhsYtuHvIcXnI7f9UbDiy99pyr/view?usp=sharing
+;221083;GEQ9G35;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035481;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221084;GJU8H51;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR035503;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/151H7yMDsSGtcp5qB1WLFtL4AczEsXFGG/view?usp=sharing
+OK;221085;GFW9A86;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K824XNR035257;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/14vl5tMj_Dpvf-joxWUfV9qfACH1xM9SS/view?usp=sharing
+OK;221086;GJY4G46;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8242NR035270;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1t2xXdyJ1FGX1JyQ3a8T8MrP2brCl6knU/view?usp=sharing
+OK;221087;GIX8C73;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8247NR035491;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1wrOaNgcdXCymXtOdVTpBgcBkfSc7ruyu/view?usp=sharing
+OK;221088;GHR8B24 ;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR035280;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Pj3gb3bPM1O3Nz1hsbpl57yXWMUgSrIg/view?usp=sharing
+OK;221089;EGK4D36;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8246NR035594;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1So4glIQoUO6ODIF02RsK4IB0qhj6aWCf/view?usp=sharing
+;221090;GES2H53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035612;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221091;GIK7C36;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035304;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1O_I6w9xXqGm9U7abXMatolV64GdvfLoP/view?usp=sharing
+;221092;GGH3D07;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR035626;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221093;GJQ4H52;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8240NR035445;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221094;GHZ7D53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR035515;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/10eqnd1WdoBviLLRgXWnLHvDHeAahfcEQ/view?usp=sharing
+;221095;GFT4J25;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR035529;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221096;GEC9A24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR035563;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1tfBcwlhcwlfm2h1sQR-sPrkDUVyCpbEm/view?usp=sharing
+;221097;GAQ7B51;Jaguaré;;;;;Volkswagen;24-260;9536K8248NR035578;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221098;GGS2G32;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR036849;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1gjlwHG-gSyA4mZpP94Kd1cVwJ7Lzpghv/view?usp=sharing
+OK;221099;GHA6E27;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8243NR037173;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/12HDBAIsJvAO-SLU8RYPLUI1Be3FRs2Gw/view?usp=sharing
+OK;221100;GJC9B66;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8245NR036381;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/17Lue6DEZAtAmcGx-jk0Obpcc4H0clLF1/view?usp=sharing
+OK;221101;GCY1B26;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR035913;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1tlTxDgkYKn7QtAGsLkBFF7irTn9zxAbk/view?usp=sharing
+OK;221103;GDP1J44;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8245NR036431;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/15axVNNOKlt0RAK11AqXdkzKEi1dXBjg4/view?usp=sharing
+;221104;GFQ9J06;Jaguaré;;;;;Volkswagen;24-260;9536K8241NR037043;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221105;GAG4J51;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR037361;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;221106;GKA6J75;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR037091;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;221107;GJP4H31;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;24-260;9536K8247NR037161;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1Sp9A5bzSIr3FB75MI0HAhYsyU30WDOZ9/view?usp=sharing
+;221108;GHX0I26;Jaguaré;;;;;Volkswagen;17-260;9536K8240NR035008;2021/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;298031;EEH1022;Jaguaré;;;;;Fiat;Ducato;93W244F1392035957;2008/2009;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;298040;EEU5895;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Fiat;Ducato;93W244F1392036221;2008/2009;F1A Multijet 2.3;850;4000;0,7 m⁻¹;
+;2113612;ENZ6I51;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR926613;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113622;EGT6D22;Jaguaré;;;;;Volkswagen;3-150;9535PFTE8KR926474;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113632;DUL5F31;Jaguaré;;;;;Volkswagen;3-150;9535PFTE2KR926924;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113642;BYI0C72;Jaguaré;;;;;Volkswagen;3-150;9535PFTEXKR926623;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113652;BXD8A61;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR927122;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113662;BYY7D97;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR927258;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113672;DTP7E28;Jaguaré;;;;;Volkswagen;3-150;9535PFTE8KR926877;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113682;ECO9F77;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR927146;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113692;EZZ7B87;Jaguaré;;;;;Volkswagen;3-150;9535PFTE3KR926897;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113702;FFQ9D36;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1KR927126;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113712;FJI1G88;Jaguaré;;;;;Volkswagen;3-150;9535PFTE5KR922740;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113722;ESP5D08;Jaguaré;;;;;Volkswagen;3-150;9535PFTE7KR922819;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113732;CFY7D36;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1KR926610;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113742;EOO1F25;Jaguaré;;;;;Volkswagen;3-150;9535PFTEXKR926881;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113752;EXN4C76;Jaguaré;;;;;Volkswagen;3-150;9535PFTE0KR926470;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113762;EWD2B65;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6KR927252;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113772;BPO1G43;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR923247;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113782;FCS5A54;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6KR926635;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113792;FXD5J44;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR926441;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113802;EYL9D43;Jaguaré;;;;;Volkswagen;3-150;9535PFTE5KR926867;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113812;BSY8I14;Jaguaré;;;;;Volkswagen;3-150;9535PFTE3KR927371;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113822;EZO7F99;Jaguaré;;;;;Volkswagen;3-150;9535PFTE2KR926891;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113832;FCL2H69;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR926861;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113842;BYQ1J00;Jaguaré;;;;;Volkswagen;3-150;9535PFTE9KR926872;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113852;EOC0F20;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4KR926438;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2113862;DEM3H29;Jaguaré;;;;;Volkswagen;3-150;9535PFTE8KR926944;2018/2018;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2115052;ELY3E74;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1LR009328;2019/2020;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2115912;GHB0I17;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6MR100399;2020/2021;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2116822;JAE6A29;Transbordo PP;;;;;Volkswagen;25-360;9536R8275MR117692;2020/2021;Cummins ISC;650;2100;1,2 m⁻¹;
+;2118302;GJO0I55;Jaguaré;;;;;Volkswagen;3-150;9535PFTE5NR036745;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2118312;FLR0J05;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4NR028491;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2118322;FWB7H07;Jaguaré;;;;;Volkswagen;3-150;9535PFTE4NR039913;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2118332;GBZ4F34;Jaguaré;;;;;Volkswagen;3-150;9535PFTE1NR034068;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2118342;GEE5D42;Jaguaré;;;;;Volkswagen;3-150;9535PFTE0NR040329;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2118352;GAE8G84;Jaguaré;;;;;Volkswagen;3-150;9535PFTE6NR044532;2021/2022;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;2119162;FKC6D12;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8247PR029287;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2119172;FXF5I22;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8241PR029799;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2119182;FJF9J34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8241PR029172;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2119192;FYD4D76;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8240PR029812;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2119202;FWZ1F73;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-260;9536K8246PR029457;2022/2023;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;222021;FKW8A24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR048134;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;222022;FQM1B34;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8246NR046286;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;222024;FVN2F56;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR046796;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1fqxkO7hMR-01vvjtwexwRG4sZNQXtEUg/view?usp=sharing
+;222020;FGL2G15;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8244NR046822;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;222019;FCV8D05;Jaguaré;;;;;Volkswagen;24-260;9536K8243NR045578;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;222018;FPC3A85;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8241NR049905;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;222023;GBN6A13;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;24-260;9536K8247NR046233;2022/2022;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215096;GBZ8F44;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8244GR604692;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215092;FWB5D92;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8242GR603976;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215093;FQS8D03;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8247GR604489;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215094;GCV2H24;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8240GR605550;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215097;GGA7B63;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8245GR604913;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215088;GDI9G80;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8242GR604139;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;215076;GGB4623;Jaguaré;;;;;Volkswagen;17-280;953658241GR605298;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹;
+;213133;FLG2B52;Aterro Bandeirantes;;;;;Volkswagen;10-160;9531M62P5DR357504;2013/2014;MWM 4.10 TCA;700;2500;2,1 m⁻¹;
+;215055;GDA2948;Aterro Bandeirantes;;;;;Volkswagen;17-280;953658247GR605659;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹;
+;215073;GEV4A57;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;953658248GR605928;2015/2016;Cummins ISL;650;2200;1,2 m⁻¹;
+;215102;GCZ9B50;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-230;9533G8245GR603809;2015/2016;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;215085;FTJ8G28;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;95365824XFR507045;2015/2015;Cummins ISL;650;2200;1,2 m⁻¹;https://drive.google.com/file/d/14gsTg8xXvX1vQsmHBigiSifiupg1TgA9/view?usp=sharing
+;2120572;JAU2D10;Transbordo PP;;;;;Volkswagen;25-360;953638277NR023686;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
+;2120582;JBB3G90;Transbordo PP;;;;;Volkswagen;25-360;9536R8275NR045068;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
+;2120562;JAU2A87;Transbordo PP;;;;;Volkswagen;25-360;953638278NR022840;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
+;2122602;FZL5H31;Jaguaré;;;;;Volkswagen;18-260;9536B8TD8SR013381;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122612;GJN0G21;Jaguaré;;;;;Volkswagen;18-260;9536B8TDXSR013379;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122622;SWR3F03;Jaguaré;;;;;Volkswagen;18-260;9536B8TDXSR012958;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122652;SSU4E64;Jaguaré;;;;;Volkswagen;18-260;9536B8TD9SR013308;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122662;STJ0I64;Jaguaré;;;;;Volkswagen;18-260;9536B8TD8SR013459;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122692;STT9C04;Jaguaré;;;;;Volkswagen;18-260;9536B8TD6SR013203;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122702;STY3B83;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TDXSR013608;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122722;SUY7H53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD8SR012845;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122732;SWR3A13;Jaguaré;;;;;Volkswagen;18-260;9536B8TD9SR013213;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122792;SKE7H39;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD9SR011655;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122812;SKE9G08;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD9SR012109;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122822;STF3F74;Jaguaré;;;;;Volkswagen;18-260;9536B8TD6SR013069;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122832;SWB2D53;Jaguaré;;;;;Volkswagen;18-260;9536B8TD5SR013547;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;2122642;SKE5C62;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD7SR020807;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1J0MoLN08_vT_izB0fFrE-4eJHCtN8tVK/view?usp=sharing
+OK;2122672;STL7J94;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD4SR012776;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1tg_O4jw7EGpML6HIujiFyHAiDDX17V3E/view?usp=sharing
+OK;2122682;STQ0J43;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD3SR013384;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1ky3YkJ8hTuNkoAppD77OIr-N99CcG0i_/view?usp=sharing
+OK;2122712;SUI9F45;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD3SR016981;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1mYv6NEqK4SnsF9KQn5M4H-XE8PeVberu/view?usp=sharing
+OK;2122742;SKE0D21;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;18-260;9536B8TD9SR011381;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1nF9Yc9ZutmeUFGI5U4dmogCx90NhslCp/view?usp=sharing
+;2122752;SKE0E23;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TDXSR011356;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+OK;2122762;SKE2J97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD8SR011307;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;https://drive.google.com/file/d/1WWZ4WCpYzRimX670jnwAbQMa0VKz3aK8/view?usp=sharing
+;2122772;SKE5B29;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD9SR011784;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122782;SKE5D25;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TDXSR011390;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122802;SKE8G96;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;18-260;9536B8TD8SR011369;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2122632;TAQ5D75;Jaguaré;;;;;Volkswagen;18-260;9536B8TD5SR015105;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123232;SSR0H27;Jaguaré;;;;;Volkswagen;26-260;9536B8TD6SR021267;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123242;SSR0H52;Jaguaré;;;;;Volkswagen;26-260;9536B8TD3SR001414;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123252;SSR0I87;Jaguaré;;;;;Volkswagen;26-260;9536B8TD8SR020931;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123262;SSR1C42;Jaguaré;;;;;Volkswagen;26-260;9536B8TD4SR020618;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123272;SSR1D32;Transbordo PP;;;;;Volkswagen;26-260;9536B8TDXSR020302;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123282;SSR1E74;Jaguaré;;;;;Volkswagen;26-260;9536B8TD5SR001169;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123292;SSR1E81;CTRSS;;;;;Volkswagen;26-260;9536B8TD2SR001162;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123302;SSR1F36;CTRSS;;;;;Volkswagen;26-260;9536B8TD6SR020605;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123312;SSR0E95;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;26-260;9536B8TD1SR001198;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123322;SSR1C04;Jaguaré;;;;;Volkswagen;26-260;9536B8TD2SR001405;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123332;SSR1C73;Jaguaré;;;;;Volkswagen;26-260;9536B8TD2SR001176;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123352;SSR1E33;Jaguaré;;;;;Volkswagen;26-260;9536B8TD4SR001440;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;
+;2123112;TLM2J72;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB9SR025853;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+OK;2123122;TMC6B61;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB0SR025644;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1ZHLrhbGXQXdXPV2RFOc74722sIC83NrS/view?usp=sharing
+;2123132;TLL9A53;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB5SR025669;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;2123142;TLS3E74;Jaguaré;;;;;Volkswagen;11-180;9535E6TB5SR025672;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+OK;2123152;TMF9E05;Jaguaré;Av. Mal. Mário Guedes;Jaguaré;São Paulo - SP;05348-042;Volkswagen;11-180;9535E6TB7SR025642;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1aDXK9Q0br1sIENfiVfR8XrkIVGtKlIr1/view?usp=sharing
+;2123162;TMH8A76;Jaguaré;;;;;Volkswagen;11-180;9535E6TB5SR025848;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;2123172;TLS6B08;Jaguaré;;;;;Volkswagen;11-180;9535E6TB6SR025647;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;2123182;TJW9G99;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB9SR025674;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+OK;2123192;TJK4C27;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TBXSR025795;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1zaSEutbwnYIDx9VpAcAOWKquj4G7-t0j/view?usp=sharing
+OK;2123202;TMI7D06;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB9SR026095;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/1DYRgxH53I74f4i0d_V9koQiDV_E8xjYu/view?usp=sharing
+;2123212;TKC7A70;Jaguaré;;;;;Volkswagen;11-180;9535E6TB7SR024880;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;2123222;TLY9F90;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB7SR024894;2024/2025;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;216001;GDJ0968;Jaguaré;;;;;Volkswagen;5-150;9531M32PXGR604144;2016/2016;Cummins ISF 2.8;800;3600;0,7 m⁻¹;
+;214096;FGL3B84;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;17-280;953658243FR501166;2014/2015;Cummins ISL;650;2200;1,2 m⁻¹;
+;225004;UEY4I14;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB7TR002556;2025/2026;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+OK;225005;UDT6F61;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB8TR002520;2025/2026;Cummins ISF 3.8;700;2600;1,5 m⁻¹;https://drive.google.com/file/d/111U8yFl5bjxGKmHVnJwbd7I3fXyEO_ya/view?usp=sharing
+;225006;UDC9B00;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;11-180;9535E6TB4TR002398;2025/2026;Cummins ISF 3.8;700;2600;1,5 m⁻¹;
+;2124942;TEN3H70;Aterro Bandeirantes;;;;;Ford;Transit B41LMMB;WF0GTTBF7TU019244;2025/2026;Panther 2.0 EcoBlue;800;3800;0,5 m⁻¹;
+;2124962;TET5C38;Jaguaré;;;;;Ford;Transit B41LMMB;WF0GTTBF3TU019810;2025/2026;Panther 2.0 EcoBlue;800;3800;0,5 m⁻¹;
+;2124952;TET5C39;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Ford;Transit B41LMMB;WF0GTTBF5TU019243;2025/2026;Panther 2.0 EcoBlue;800;3800;0,5 m⁻¹;
+;225166;UFW2C20;Aterro Bandeirantes;;;;;Volkswagen;31-320;9536C8TL9TR018000;2025/2026;Cummins ISC;650;2100;1,2 m⁻¹;
+;2125742;JAZ0H59;Transbordo PP;;;;;Volkswagen;25-360;9536R8271NR040630;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
+;2125752;JAZ1J89;Transbordo PP;;;;;Volkswagen;25-360;9536R8274NR040878;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
+;2125762;JAY0A85;Transbordo PP;;;;;Volkswagen;25-360;9536R8279NR037023;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
+;2125922;JBC1E68;Transbordo PP;;;;;Volkswagen;25-360;9536R8273NR044548;2021/2022;Cummins ISC;650;2100;1,2 m⁻¹;
