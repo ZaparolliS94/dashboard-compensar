@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Projeto Compensar</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://alcdn.msauth.net/browser/2.38.3/js/msal-browser.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;min-height:100vh}
+.app{max-width:1100px;margin:0 auto;padding:2rem 1rem}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem}
+.logo{font-size:20px;font-weight:500;color:#1a1a1a}
+.logo span{color:#0F6E56}
+.header-right{display:flex;align-items:center;gap:12px}
+.sync-info{font-size:12px;color:#888;display:flex;align-items:center;gap:6px}
+.btn{padding:8px 16px;border-radius:8px;border:0.5px solid #d0d0cc;background:white;color:#1a1a1a;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:background .15s}
+.btn:hover{background:#f0f0ee}
+.btn-primary{background:#0F6E56;color:white;border-color:#0F6E56}
+.btn-primary:hover{background:#085041}
+.btn-sm{padding:5px 10px;font-size:12px}
+.btn-download{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
+.btn-download:hover{background:#9FE1CB}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.5rem}
+.metric{background:#ebebeb;border-radius:8px;padding:1rem}
+.metric-label{font-size:12px;color:#666;margin-bottom:6px}
+.metric-value{font-size:26px;font-weight:500;color:#1a1a1a}
+.metric-value.green{color:#0F6E56}
+.metric-sub{font-size:11px;color:#888;margin-top:4px}
+.prog-bar{height:5px;background:#d0d0cc;border-radius:3px;overflow:hidden;margin-top:8px}
+.prog-fill{height:100%;border-radius:3px;background:#0F6E56;transition:width .4s}
+.section-title{font-size:14px;font-weight:500;color:#1a1a1a;margin-bottom:12px}
+.locations{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}
+.loc-card{background:white;border:0.5px solid #e0e0dc;border-radius:12px;padding:1rem}
+.loc-name{font-size:13px;font-weight:500;margin-bottom:3px}
+.loc-count{font-size:12px;color:#888;margin-bottom:10px}
+.loc-pct{font-size:22px;font-weight:500;margin-top:6px}
+.loc-pct span{font-size:12px;font-weight:400;color:#888}
+.table-card{background:white;border:0.5px solid #e0e0dc;border-radius:12px;overflow:hidden;margin-bottom:1.5rem}
+.table-top{padding:12px 1rem;border-bottom:0.5px solid #e0e0dc;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.filters{display:flex;gap:6px}
+.fbtn{font-size:12px;padding:4px 10px;border-radius:8px;border:0.5px solid #d0d0cc;background:transparent;color:#666;cursor:pointer}
+.fbtn.active{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
+.search-wrap{position:relative;display:flex;align-items:center}
+.search-wrap svg{position:absolute;left:8px;color:#888;pointer-events:none}
+.search-wrap input{padding:5px 8px 5px 28px;font-size:12px;border:0.5px solid #d0d0cc;border-radius:8px;background:white;color:#1a1a1a;width:160px;outline:none}
+.search-wrap input:focus{border-color:#0F6E56}
+table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
+th{padding:8px 12px;text-align:left;font-weight:500;color:#888;font-size:11px;border-bottom:0.5px solid #e0e0dc;background:#f8f8f6;text-transform:uppercase;letter-spacing:.4px}
+td{padding:10px 12px;border-bottom:0.5px solid #f0f0ee;color:#1a1a1a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fafaf8}
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 8px;border-radius:6px;font-weight:500}
+.badge-ok{background:#E1F5EE;color:#085041}
+.badge-pend{background:#f0f0ee;color:#666}
+.login-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;text-align:center;gap:16px}
+.login-logo{font-size:28px;font-weight:500;margin-bottom:8px}
+.login-sub{font-size:14px;color:#888;margin-bottom:16px}
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;gap:12px;color:#888;font-size:14px}
+.spinner{width:28px;height:28px;border:2px solid #e0e0dc;border-top-color:#0F6E56;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bulk-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 1rem;background:#E1F5EE;border-bottom:0.5px solid #5DCAA5}
+.bulk-txt{font-size:13px;color:#085041;font-weight:500}
+.hidden{display:none}
+.col-placa{width:110px}
+.col-local{width:120px}
+.col-modelo{width:auto}
+.col-ano{width:70px}
+.col-status{width:110px}
+.col-acao{width:110px}
+</style>
+</head>
+<body>
+<div id="login-screen" class="login-screen">
+  <div class="login-logo">Projeto <span style="color:#0F6E56">Compensar</span></div>
+  <div class="login-sub">Faça login com sua conta Microsoft para acessar o dashboard</div>
+  <button class="btn btn-primary" onclick="login()" style="padding:10px 24px;font-size:14px">
+    <svg width="16" height="16" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:4px"><rect x="1" y="1" width="9" height="9" fill="#f25022"/><rect x="11" y="1" width="9" height="9" fill="#7fba00"/><rect x="1" y="11" width="9" height="9" fill="#00a4ef"/><rect x="11" y="11" width="9" height="9" fill="#ffb900"/></svg>
+    Entrar com Microsoft
+  </button>
+</div>
+
+<div id="loading-screen" class="loading hidden">
+  <div class="spinner"></div>
+  <span>Carregando dados do OneDrive...</span>
+</div>
+
+<div id="app" class="app hidden">
+  <div class="header">
+    <div>
+      <div class="logo">Projeto <span>Compensar</span></div>
+      <div style="font-size:12px;color:#888;margin-top:3px" id="updated-at">Sincronizando...</div>
+    </div>
+    <div class="header-right">
+      <button class="btn btn-sm" onclick="recarregar()">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        Atualizar
+      </button>
+      <button class="btn btn-sm" onclick="logout()">Sair</button>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-label">Total de veículos</div>
+      <div class="metric-value" id="m-total">—</div>
+      <div class="metric-sub">na carteira</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Laudos concluídos</div>
+      <div class="metric-value green" id="m-ok">—</div>
+      <div class="metric-sub">com OK</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Pendentes</div>
+      <div class="metric-value" id="m-pend">—</div>
+      <div class="metric-sub">aguardando</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Progresso geral</div>
+      <div class="metric-value" id="m-pct">—</div>
+      <div class="metric-sub">
+        <div class="prog-bar"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Progresso por localização</div>
+  <div class="locations" id="locations"></div>
+
+  <div class="table-card">
+    <div class="table-top">
+      <div class="section-title" style="margin:0">Veículos</div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <div class="filters">
+          <button class="fbtn active" onclick="setFiltro('todos',this)">Todos</button>
+          <button class="fbtn" onclick="setFiltro('ok',this)">Concluídos</button>
+          <button class="fbtn" onclick="setFiltro('pendente',this)">Pendentes</button>
+        </div>
+        <div class="search-wrap">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" placeholder="Buscar placa..." id="search" oninput="setBusca(this.value)">
+        </div>
+        <button class="btn btn-download btn-sm" id="btn-lote" onclick="downloadLote()">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar todos OK
+        </button>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-placa">Placa</th>
+          <th class="col-local">Local</th>
+          <th class="col-modelo">Modelo</th>
+          <th class="col-ano">Ano</th>
+          <th class="col-status">Status</th>
+          <th class="col-acao">Laudo</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const CLIENT_ID = '903cfd5f-bfa8-4ad4-a8ad-1fd21b32097d';
+const TENANT_ID = 'ef561d60-ab88-4ce9-8ccc-e3936236b76b';
+const EXCEL_PATH = '1. CLIENTES COMPENSAR/2026/05. MAI/LOGA/AUTOMACAO_LOGA/Lista_principal.xlsx';
+const OUTPUT_PATH = '1. CLIENTES COMPENSAR/2026/05. MAI/LOGA/AUTOMACAO_LOGA/OUTPUT';
+
+const msalConfig = {
+  auth: {
+    clientId: CLIENT_ID,
+    authority: `https://login.microsoftonline.com/${TENANT_ID}`,
+    redirectUri: window.location.href.split('?')[0]
+  },
+  cache: { cacheLocation: 'localStorage', storeAuthStateInCookie: false }
+};
+
+const scopes = ['Files.Read', 'Files.ReadWrite', 'User.Read'];
+let msalInstance, token, veiculos = [], filtroAtivo = 'todos', busca = '';
+
+async function init() {
+  msalInstance = new msal.PublicClientApplication(msalConfig);
+  await msalInstance.initialize();
+  const resp = await msalInstance.handleRedirectPromise();
+  const accounts = msalInstance.getAllAccounts();
+  if (resp || accounts.length > 0) {
+    await carregarDados();
+  }
+}
+
+async function login() {
+  await msalInstance.loginRedirect({ scopes });
+}
+
+async function logout() {
+  await msalInstance.logoutRedirect();
+}
+
+async function getToken() {
+  const accounts = msalInstance.getAllAccounts();
+  const req = { scopes, account: accounts[0] };
+  try {
+    const r = await msalInstance.acquireTokenSilent(req);
+    return r.accessToken;
+  } catch {
+    const r = await msalInstance.acquireTokenPopup(req);
+    return r.accessToken;
+  }
+}
+
+async function carregarDados() {
+  show('loading-screen');
+  try {
+    token = await getToken();
+    const headers = { Authorization: `Bearer ${token}` };
+
+    const metaUrl = `https://graph.microsoft.com/v1.0/me/drive/root:/${encodeURIComponent(EXCEL_PATH)}`;
+    const meta = await fetch(metaUrl, { headers }).then(r => r.json());
+    const downloadUrl = meta['@microsoft.graph.downloadUrl'];
+    const buf = await fetch(downloadUrl).then(r => r.arrayBuffer());
+
+    const wb = XLSX.read(buf, { type: 'array' });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+
+    veiculos = [];
+    for (let i = 4; i < rows.length; i++) {
+      const r = rows[i];
+      const placa = String(r[3] || '').trim();
+      if (!placa || placa === 'Placa') continue;
+      const status = String(r[1] || '').trim().toUpperCase() === 'OK' ? 'ok' : 'pendente';
+      const anoRaw = String(r[12] || '').trim();
+      const ano = anoRaw.includes('/') ? anoRaw.split('/').pop().trim() : anoRaw;
+      veiculos.push({
+        placa,
+        local: String(r[4] || '').trim(),
+        chassi: String(r[11] || '').trim(),
+        ano,
+        status
+      });
+    }
+
+    renderDashboard();
+    show('app');
+    document.getElementById('updated-at').textContent =
+      'Atualizado em ' + new Date().toLocaleString('pt-BR');
+  } catch(e) {
+    alert('Erro ao carregar dados: ' + e.message);
+    show('login-screen');
+  }
+}
+
+function renderDashboard() {
+  const total = veiculos.length;
+  const ok = veiculos.filter(v => v.status === 'ok').length;
+  const pend = total - ok;
+  const pct = total ? Math.round(ok / total * 100) : 0;
+
+  document.getElementById('m-total').textContent = total;
+  document.getElementById('m-ok').textContent = ok;
+  document.getElementById('m-pend').textContent = pend;
+  document.getElementById('m-pct').textContent = pct + '%';
+  document.getElementById('prog-fill').style.width = pct + '%';
+
+  const locMap = {};
+  veiculos.forEach(v => {
+    if (!v.local) return;
+    if (!locMap[v.local]) locMap[v.local] = { total: 0, ok: 0 };
+    locMap[v.local].total++;
+    if (v.status === 'ok') locMap[v.local].ok++;
+  });
+
+  document.getElementById('locations').innerHTML = Object.entries(locMap).map(([nome, d]) => {
+    const p = d.total ? Math.round(d.ok / d.total * 100) : 0;
+    return `<div class="loc-card">
+      <div class="loc-name">${nome}</div>
+      <div class="loc-count">${d.ok} de ${d.total} veículos</div>
+      <div class="prog-bar"><div class="prog-fill" style="width:${p}%"></div></div>
+      <div class="loc-pct">${p}% <span>concluído</span></div>
+    </div>`;
+  }).join('');
+
+  renderTabela();
+}
+
+function renderTabela() {
+  const lista = veiculos.filter(v => {
+    const pf = filtroAtivo === 'todos' || v.status === filtroAtivo;
+    const pb = !busca || v.placa.toLowerCase().includes(busca.toLowerCase()) || v.local.toLowerCase().includes(busca.toLowerCase());
+    return pf && pb;
+  });
+
+  document.getElementById('tbody').innerHTML = lista.map(v => `
+    <tr>
+      <td style="font-weight:500">${v.placa}</td>
+      <td style="color:#666">${v.local}</td>
+      <td style="color:#666" title="${v.chassi}">${v.chassi || '—'}</td>
+      <td style="color:#666">${v.ano || '—'}</td>
+      <td><span class="badge ${v.status === 'ok' ? 'badge-ok' : 'badge-pend'}">
+        ${v.status === 'ok' ? '&#10003; Concluído' : '&#9679; Pendente'}
+      </span></td>
+      <td>${v.status === 'ok'
+        ? `<button class="btn btn-download btn-sm" onclick="downloadPDF('${v.placa}')">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Baixar laudo
+           </button>`
+        : '<span style="color:#bbb;font-size:12px">—</span>'
+      }</td>
+    </tr>`).join('');
+}
+
+async function downloadPDF(placa) {
+  try {
+    const nome = `${placa}_ASSINADO.pdf`;
+    const url = `https://graph.microsoft.com/v1.0/me/drive/root:/${encodeURIComponent(OUTPUT_PATH + '/' + nome)}`;
+    const meta = await fetch(url, { headers: { Authorization: `Bearer ${token}` } }).then(r => r.json());
+    if (!meta['@microsoft.graph.downloadUrl']) { alert('Laudo não encontrado no OneDrive: ' + nome); return; }
+    const a = document.createElement('a');
+    a.href = meta['@microsoft.graph.downloadUrl'];
+    a.download = nome;
+    a.click();
+  } catch(e) { alert('Erro ao baixar: ' + e.message); }
+}
+
+async function downloadLote() {
+  const concluidos = veiculos.filter(v => v.status === 'ok');
+  if (!concluidos.length) { alert('Nenhum laudo concluído.'); return; }
+  const btn = document.getElementById('btn-lote');
+  btn.textContent = 'Preparando ZIP...';
+  btn.disabled = true;
+  try {
+    const zip = new JSZip();
+    for (const v of concluidos) {
+      try {
+        const nome = `${v.placa}_ASSINADO.pdf`;
+        const url = `https://graph.microsoft.com/v1.0/me/drive/root:/${encodeURIComponent(OUTPUT_PATH + '/' + nome)}`;
+        const meta = await fetch(url, { headers: { Authorization: `Bearer ${token}` } }).then(r => r.json());
+        if (!meta['@microsoft.graph.downloadUrl']) continue;
+        const buf = await fetch(meta['@microsoft.graph.downloadUrl']).then(r => r.arrayBuffer());
+        zip.file(nome, buf);
+      } catch {}
+    }
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'laudos_compensar.zip';
+    a.click();
+  } catch(e) { alert('Erro ao gerar ZIP: ' + e.message); }
+  btn.innerHTML = `<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Baixar todos OK`;
+  btn.disabled = false;
+}
+
+async function recarregar() { await carregarDados(); }
+
+function setFiltro(tipo, btn) {
+  filtroAtivo = tipo;
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTabela();
+}
+
+function setBusca(val) { busca = val; renderTabela(); }
+
+function show(id) {
+  ['login-screen','loading-screen','app'].forEach(i => {
+    document.getElementById(i).classList.toggle('hidden', i !== id);
+  });
+}
+
+init();
+</script>
+</body>
+</html>
