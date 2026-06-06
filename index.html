@@ -158,10 +158,19 @@ async function init() {
     const result = Papa.parse(text, {
       separator: ';',
       encoding: 'UTF-8',
-      skipEmptyLines: true
+      skipEmptyLines: true,
+      quoteChar: '"'
     });
 
     const rows = result.data;
+
+    // Detectar índice da coluna Link Laudo no cabeçalho
+    let linkIdx = 16;
+    if (rows[2]) {
+      const header = rows[2].map(c => c.trim().toLowerCase());
+      const found = header.findIndex(c => c.includes('link'));
+      if (found >= 0) linkIdx = found;
+    }
     veiculos = [];
 
     for (let i = 3; i < rows.length; i++) {
@@ -174,7 +183,7 @@ async function init() {
       const ano = anoRaw.includes('/') ? anoRaw.split('/').pop().trim() : anoRaw;
       const marca = (r[8] || '').trim();
       const modelo = (r[9] || '').trim();
-      const link = (r[16] || '').trim();
+      const link = (r[linkIdx] || '').trim();
       veiculos.push({
         placa,
         local: (r[3] || '').trim(),
