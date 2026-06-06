@@ -234,10 +234,15 @@ async function carregarDados() {
 
     const metaUrl = `https://graph.microsoft.com/v1.0/me/drive/root:/${encodeURIComponent(EXCEL_PATH)}:/content`;
     const excelResp = await fetch(metaUrl, { headers: { Authorization: `Bearer ${token}` } });
-    if (!excelResp.ok) throw new Error('Erro ao baixar planilha: ' + excelResp.status);
+    if (!excelResp.ok) {
+      const txt = await excelResp.text();
+      throw new Error(`Erro ${excelResp.status}: ${txt.substring(0,300)}`);
+    }
+    const contentType = excelResp.headers.get('content-type') || '';
+    console.log('Content-Type:', contentType);
     const buf = await excelResp.arrayBuffer();
-
-    const wb = XLSX.read(buf, { type: 'array' });
+    console.log('Tamanho buffer:', buf.byteLength, 'bytes');
+    const wb = XLSX.read(new Uint8Array(buf), { type: 'array', cellDates: true });
     const ws = wb.Sheets[wb.SheetNames[0]];
     const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
 
