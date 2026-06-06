@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard — Projeto Compensar</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@azure/msal-browser@2.38.3/lib/msal-browser.min.js"></script>
+<script src="https://unpkg.com/@azure/msal-browser@2.38.3/lib/msal-browser.min.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;min-height:100vh}
@@ -182,6 +182,14 @@ const msalConfig = {
 
 const scopes = ['Files.Read', 'Files.ReadWrite', 'User.Read'];
 let msalInstance, token, veiculos = [], filtroAtivo = 'todos', busca = '';
+
+window.addEventListener('load', function() {
+  if (typeof msal === 'undefined') {
+    document.querySelector('.login-screen p, .login-sub').textContent = 'Erro ao carregar biblioteca de autenticação. Recarregue a página.';
+    return;
+  }
+  init();
+});
 
 async function init() {
   msalInstance = new msal.PublicClientApplication(msalConfig);
@@ -377,7 +385,6 @@ function show(id) {
   });
 }
 
-init();
 </script>
 </body>
 </html>
