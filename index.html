@@ -146,23 +146,16 @@ tr:hover td{background:#fafaf8}
 </div>
 
 <script>
-// Links compartilhados do OneDrive
-const EXCEL_SHARE = 'https://1drv.ms/x/c/ab58175f3a8c43ef/IQCRuzlTccHpSZCnw-6J2E7KAQhp-eS26pm1q3ZHlPSiHDc?e=P2O2JU';
+const EXCEL_DL = 'https://onedrive.live.com/download?resid=AB58175F3A8C43EF!s5339bb91c17149e990a7c3ee89d84eca&ithint=file%2Cxlsx&e=P2O2JU&migratedtospo=true';
 const OUTPUT_SHARE = 'https://1drv.ms/f/c/ab58175f3a8c43ef/IgAtWakZtl57TbQYyqDB9xCwAXtG6zWepnYz1qT1vCEBusc?e=aRmnKJ';
-
-// Converte link de compartilhamento OneDrive para link de download direto
-function oneDriveDownloadUrl(shareUrl) {
-  const b64 = btoa(shareUrl).replace(/=/g,'').replace(/\+/g,'-').replace(/\//g,'_');
-  return `https://api.onedrive.com/v1.0/shares/u!${b64}/root/content`;
-}
 
 let veiculos = [], filtroAtivo = 'todos', busca = '';
 
 async function init() {
   show('loading');
   try {
-    const dlUrl = oneDriveDownloadUrl(EXCEL_SHARE);
-    const resp = await fetch(dlUrl);
+    const resp = await fetch(EXCEL_DL);
+
     if (!resp.ok) throw new Error(`Erro ${resp.status} ao baixar planilha`);
     const buf = await resp.arrayBuffer();
     const wb = XLSX.read(new Uint8Array(buf), { type: 'array' });
