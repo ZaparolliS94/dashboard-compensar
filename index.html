@@ -232,10 +232,10 @@ async function carregarDados() {
     token = await getToken();
     const headers = { Authorization: `Bearer ${token}` };
 
-    const metaUrl = `https://graph.microsoft.com/v1.0/me/drive/root:/${encodeURIComponent(EXCEL_PATH)}`;
-    const meta = await fetch(metaUrl, { headers }).then(r => r.json());
-    const downloadUrl = meta['@microsoft.graph.downloadUrl'];
-    const buf = await fetch(downloadUrl).then(r => r.arrayBuffer());
+    const metaUrl = `https://graph.microsoft.com/v1.0/me/drive/root:/${encodeURIComponent(EXCEL_PATH)}:/content`;
+    const excelResp = await fetch(metaUrl, { headers: { Authorization: `Bearer ${token}` } });
+    if (!excelResp.ok) throw new Error('Erro ao baixar planilha: ' + excelResp.status);
+    const buf = await excelResp.arrayBuffer();
 
     const wb = XLSX.read(buf, { type: 'array' });
     const ws = wb.Sheets[wb.SheetNames[0]];
