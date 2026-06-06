@@ -4,20 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard — Projeto Compensar</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;min-height:100vh}
 .app{max-width:1100px;margin:0 auto;padding:2rem 1rem}
 .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem}
-.logo{font-size:20px;font-weight:500}
-.logo span{color:#0F6E56}
+.logo{font-size:20px;font-weight:500}.logo span{color:#0F6E56}
 .btn{padding:8px 16px;border-radius:8px;border:0.5px solid #d0d0cc;background:white;color:#1a1a1a;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:background .15s}
 .btn:hover{background:#f0f0ee}
 .btn-sm{padding:5px 10px;font-size:12px}
-.btn-download{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
-.btn-download:hover{background:#9FE1CB}
+.btn-dl{background:#E1F5EE;color:#085041;border-color:#5DCAA5;text-decoration:none}
+.btn-dl:hover{background:#9FE1CB}
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.5rem}
 .metric{background:#ebebeb;border-radius:8px;padding:1rem}
 .metric-label{font-size:12px;color:#666;margin-bottom:6px}
@@ -25,9 +24,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .metric-value.green{color:#0F6E56}
 .metric-sub{font-size:11px;color:#888;margin-top:4px}
 .prog-bar{height:5px;background:#d0d0cc;border-radius:3px;overflow:hidden;margin-top:8px}
-.prog-fill{height:100%;border-radius:3px;background:#0F6E56;transition:width .4s}
+.prog-fill{height:100%;border-radius:3px;background:#0F6E56;transition:width .6s}
 .section-title{font-size:14px;font-weight:500;margin-bottom:12px}
-.locations{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}
+.locations{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:1.5rem}
 .loc-card{background:white;border:0.5px solid #e0e0dc;border-radius:12px;padding:1rem}
 .loc-name{font-size:13px;font-weight:500;margin-bottom:3px}
 .loc-count{font-size:12px;color:#888;margin-bottom:10px}
@@ -51,10 +50,10 @@ tr:hover td{background:#fafaf8}
 .badge-pend{background:#f0f0ee;color:#666}
 .loading{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;gap:12px;color:#888;font-size:14px}
 .spinner{width:28px;height:28px;border:2px solid #e0e0dc;border-top-color:#0F6E56;border-radius:50%;animation:spin .7s linear infinite}
-.erro{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;gap:12px;color:#888;font-size:14px;text-align:center}
+.erro{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;gap:12px;color:#888;font-size:14px;text-align:center;padding:2rem}
 @keyframes spin{to{transform:rotate(360deg)}}
 .hidden{display:none}
-.col-placa{width:110px}.col-local{width:130px}.col-chassi{width:auto}.col-ano{width:70px}.col-status{width:110px}.col-acao{width:120px}
+.col-placa{width:100px}.col-local{width:120px}.col-marca{width:100px}.col-modelo{width:auto}.col-ano{width:70px}.col-status{width:110px}.col-acao{width:90px}
 </style>
 </head>
 <body>
@@ -65,8 +64,8 @@ tr:hover td{background:#fafaf8}
 </div>
 
 <div id="erro" class="erro hidden">
-  <div style="font-size:32px">⚠️</div>
-  <div id="erro-msg">Erro ao carregar dados.</div>
+  <div style="font-size:40px">⚠️</div>
+  <div id="erro-msg"></div>
   <button class="btn" onclick="init()">Tentar novamente</button>
 </div>
 
@@ -121,12 +120,8 @@ tr:hover td{background:#fafaf8}
         </div>
         <div class="search-wrap">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <input type="text" placeholder="Buscar placa..." oninput="setBusca(this.value)">
+          <input type="text" placeholder="Buscar placa / local..." oninput="setBusca(this.value)">
         </div>
-        <button class="btn btn-download btn-sm" onclick="downloadLote()">
-          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Baixar todos OK
-        </button>
       </div>
     </div>
     <table>
@@ -134,10 +129,10 @@ tr:hover td{background:#fafaf8}
         <tr>
           <th class="col-placa">Placa</th>
           <th class="col-local">Local</th>
-          <th class="col-chassi">Chassi</th>
+          <th class="col-marca">Marca</th>
+          <th class="col-modelo">Modelo</th>
           <th class="col-ano">Ano</th>
           <th class="col-status">Status</th>
-          <th class="col-acao">Laudo</th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -146,34 +141,42 @@ tr:hover td{background:#fafaf8}
 </div>
 
 <script>
-const EXCEL_DL = 'https://onedrive.live.com/download?resid=AB58175F3A8C43EF!s5339bb91c17149e990a7c3ee89d84eca&ithint=file%2Cxlsx&e=P2O2JU&migratedtospo=true';
-const OUTPUT_SHARE = 'https://1drv.ms/f/c/ab58175f3a8c43ef/IgAtWakZtl57TbQYyqDB9xCwAXtG6zWepnYz1qT1vCEBusc?e=aRmnKJ';
+const CSV_URL = 'https://raw.githubusercontent.com/ZaparolliS94/dashboard-compensar/main/Lista_principal.csv';
 
 let veiculos = [], filtroAtivo = 'todos', busca = '';
 
 async function init() {
   show('loading');
   try {
-    const resp = await fetch(EXCEL_DL);
+    const resp = await fetch(CSV_URL + '?t=' + Date.now());
+    if (!resp.ok) throw new Error('Erro ' + resp.status + ' ao carregar dados');
+    const text = await resp.text();
 
-    if (!resp.ok) throw new Error(`Erro ${resp.status} ao baixar planilha`);
-    const buf = await resp.arrayBuffer();
-    const wb = XLSX.read(new Uint8Array(buf), { type: 'array' });
-    const ws = wb.Sheets[wb.SheetNames[0]];
-    const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+    const result = Papa.parse(text, {
+      separator: ';',
+      encoding: 'UTF-8',
+      skipEmptyLines: true
+    });
 
+    const rows = result.data;
     veiculos = [];
-    for (let i = 4; i < rows.length; i++) {
+
+    for (let i = 3; i < rows.length; i++) {
       const r = rows[i];
-      const placa = String(r[3] || '').trim();
+      const placa = (r[2] || '').trim();
       if (!placa || placa.toLowerCase() === 'placa') continue;
-      const status = String(r[1] || '').trim().toUpperCase() === 'OK' ? 'ok' : 'pendente';
-      const anoRaw = String(r[12] || '').trim();
+      const statusRaw = (r[0] || '').trim().toUpperCase();
+      const status = statusRaw === 'OK' ? 'ok' : 'pendente';
+      const anoRaw = (r[11] || '').trim();
       const ano = anoRaw.includes('/') ? anoRaw.split('/').pop().trim() : anoRaw;
+      const marca = (r[8] || '').trim();
+      const modelo = (r[9] || '').trim();
       veiculos.push({
         placa,
-        local: String(r[4] || '').trim(),
-        chassi: String(r[11] || '').trim(),
+        local: (r[3] || '').trim(),
+        marca,
+        modelo: marca + (modelo ? ' ' + modelo : ''),
+        chassi: (r[10] || '').trim(),
         ano,
         status
       });
@@ -184,7 +187,7 @@ async function init() {
       'Atualizado em ' + new Date().toLocaleString('pt-BR');
     show('app');
   } catch(e) {
-    document.getElementById('erro-msg').textContent = 'Erro: ' + e.message;
+    document.getElementById('erro-msg').textContent = e.message;
     show('erro');
   }
 }
@@ -209,15 +212,17 @@ function renderDashboard() {
     if (v.status === 'ok') locMap[v.local].ok++;
   });
 
-  document.getElementById('locations').innerHTML = Object.entries(locMap).map(([nome, d]) => {
-    const p = d.total ? Math.round(d.ok / d.total * 100) : 0;
-    return `<div class="loc-card">
-      <div class="loc-name">${nome}</div>
-      <div class="loc-count">${d.ok} de ${d.total} veículos</div>
-      <div class="prog-bar"><div class="prog-fill" style="width:${p}%"></div></div>
-      <div class="loc-pct">${p}% <span>concluído</span></div>
-    </div>`;
-  }).join('');
+  document.getElementById('locations').innerHTML = Object.entries(locMap)
+    .sort((a,b) => b[1].ok - a[1].ok)
+    .map(([nome, d]) => {
+      const p = d.total ? Math.round(d.ok / d.total * 100) : 0;
+      return `<div class="loc-card">
+        <div class="loc-name">${nome}</div>
+        <div class="loc-count">${d.ok} de ${d.total} veículos</div>
+        <div class="prog-bar"><div class="prog-fill" style="width:${p}%"></div></div>
+        <div class="loc-pct">${p}% <span>concluído</span></div>
+      </div>`;
+    }).join('');
 
   renderTabela();
 }
@@ -225,32 +230,26 @@ function renderDashboard() {
 function renderTabela() {
   const lista = veiculos.filter(v => {
     const pf = filtroAtivo === 'todos' || v.status === filtroAtivo;
-    const pb = !busca || v.placa.toLowerCase().includes(busca.toLowerCase()) || v.local.toLowerCase().includes(busca.toLowerCase());
+    const pb = !busca ||
+      v.placa.toLowerCase().includes(busca.toLowerCase()) ||
+      v.local.toLowerCase().includes(busca.toLowerCase()) ||
+      v.modelo.toLowerCase().includes(busca.toLowerCase());
     return pf && pb;
   });
 
-  document.getElementById('tbody').innerHTML = lista.map(v => `
+  document.getElementById('tbody').innerHTML = lista.length === 0
+    ? `<tr><td colspan="6" style="text-align:center;color:#888;padding:2rem">Nenhum veículo encontrado</td></tr>`
+    : lista.map(v => `
     <tr>
       <td style="font-weight:500">${v.placa}</td>
       <td style="color:#666">${v.local}</td>
-      <td style="color:#666" title="${v.chassi}">${v.chassi || '—'}</td>
+      <td style="color:#666">${v.marca}</td>
+      <td style="color:#666" title="${v.modelo}">${v.modelo}</td>
       <td style="color:#666">${v.ano || '—'}</td>
       <td><span class="badge ${v.status === 'ok' ? 'badge-ok' : 'badge-pend'}">
         ${v.status === 'ok' ? '✓ Concluído' : '● Pendente'}
       </span></td>
-      <td>${v.status === 'ok'
-        ? `<a href="${OUTPUT_SHARE}" target="_blank" class="btn btn-download btn-sm" style="text-decoration:none">
-            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Ver laudo
-           </a>`
-        : '<span style="color:#bbb;font-size:12px">—</span>'
-      }</td>
     </tr>`).join('');
-}
-
-async function downloadLote() {
-  alert('Abrindo pasta OUTPUT com todos os laudos concluídos...');
-  window.open(OUTPUT_SHARE, '_blank');
 }
 
 function setFiltro(tipo, btn) {
