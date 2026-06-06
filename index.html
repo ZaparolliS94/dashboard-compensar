@@ -175,9 +175,9 @@ const msalConfig = {
   auth: {
     clientId: CLIENT_ID,
     authority: `https://login.microsoftonline.com/${TENANT_ID}`,
-    redirectUri: window.location.href.split('?')[0]
+    redirectUri: 'https://zaparollis94.github.io/dashboard-compensar/'
   },
-  cache: { cacheLocation: 'localStorage', storeAuthStateInCookie: false }
+  cache: { cacheLocation: 'localStorage', storeAuthStateInCookie: true }
 };
 
 const scopes = ['Files.Read', 'Files.ReadWrite', 'User.Read'];
@@ -186,19 +186,24 @@ let msalInstance, token, veiculos = [], filtroAtivo = 'todos', busca = '';
 async function init() {
   msalInstance = new msal.PublicClientApplication(msalConfig);
   await msalInstance.initialize();
-  const resp = await msalInstance.handleRedirectPromise();
   const accounts = msalInstance.getAllAccounts();
-  if (resp || accounts.length > 0) {
+  if (accounts.length > 0) {
     await carregarDados();
   }
 }
 
 async function login() {
-  await msalInstance.loginRedirect({ scopes });
+  try {
+    const resp = await msalInstance.loginPopup({ scopes });
+    if (resp) await carregarDados();
+  } catch(e) {
+    alert('Erro no login: ' + e.message);
+  }
 }
 
 async function logout() {
-  await msalInstance.logoutRedirect();
+  await msalInstance.logoutPopup();
+  show('login-screen');
 }
 
 async function getToken() {
