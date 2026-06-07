@@ -280,11 +280,7 @@ function renderTabela() {
         ${v.status === 'ok' ? '✓ Concluído' : '● Pendente'}
       </span></td>
       <td>${v.status === 'ok' && v.link
-        ? (() => {
-            const fileId = v.link.match(/\/d\/([^\/]+)\//)?.[1] || '';
-            const dlUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : v.link;
-            return `<a href="${dlUrl}" target="_blank" class="btn-dl">↓ Baixar</a>`;
-          })()
+        ? `<a href="${v.link}" target="_blank" class="btn-dl">↓ Baixar</a>`
         : v.status === 'ok'
           ? `<span style="color:#bbb;font-size:12px">Sem link</span>`
           : `<span style="color:#bbb;font-size:12px">—</span>`
@@ -317,31 +313,7 @@ function limparSelecao() {
 async function downloadSelecionados() {
   const checks = document.querySelectorAll('.chk-placa:checked');
   if (!checks.length) return;
-
-  const btn = document.querySelector('[onclick="downloadSelecionados()"]');
-  const total = checks.length;
-
-  if (total > 10) {
-    if (!confirm(`Você selecionou ${total} arquivos. O navegador vai baixar um por um. Continuar?`)) return;
-  }
-
-  btn.textContent = 'Baixando...';
-  btn.disabled = true;
-
-  for (const chk of checks) {
-    const link = chk.dataset.link;
-    const fileId = link.match(/\/d\/([^\/]+)\//)?.[1];
-    if (!fileId) continue;
-    const dlUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-    const a = document.createElement('a');
-    a.href = dlUrl;
-    a.target = '_blank';
-    a.click();
-    await new Promise(r => setTimeout(r, 1500)); // delay entre downloads
-  }
-
-  btn.textContent = '↓ Baixar selecionados';
-  btn.disabled = false;
+  window.open('https://drive.google.com/drive/folders/1WU8nx02EvEMB54fdcOh_gMbJyTSHSHKK', '_blank');
 }
 
 function setFiltro(tipo, btn) {
