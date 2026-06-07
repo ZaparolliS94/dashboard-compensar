@@ -126,9 +126,21 @@ tr:hover td{background:#fafaf8}
         </div>
       </div>
     </div>
+
+    <div id="barra-selecao" style="display:none;padding:10px 1rem;background:#E1F5EE;border-bottom:0.5px solid #5DCAA5;display:none;align-items:center;justify-content:space-between">
+      <span id="sel-count" style="font-size:13px;color:#085041;font-weight:500">0 selecionados</span>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-sm" onclick="limparSelecao()">Limpar</button>
+        <button class="btn btn-sm" style="background:#0F6E56;color:white;border-color:#0F6E56" onclick="downloadSelecionados()">
+          ↓ Baixar selecionados
+        </button>
+      </div>
+    </div>
+
     <table>
       <thead>
         <tr>
+          <th style="width:36px"><input type="checkbox" id="check-all" onchange="toggleTodos(this)" title="Selecionar todos"></th>
           <th class="col-placa">Placa</th>
           <th class="col-local">Local</th>
           <th class="col-marca">Marca</th>
@@ -252,9 +264,13 @@ function renderTabela() {
   });
 
   document.getElementById('tbody').innerHTML = lista.length === 0
-    ? `<tr><td colspan="6" style="text-align:center;color:#888;padding:2rem">Nenhum veículo encontrado</td></tr>`
+    ? `<tr><td colspan="8" style="text-align:center;color:#888;padding:2rem">Nenhum veículo encontrado</td></tr>`
     : lista.map(v => `
     <tr>
+      <td style="text-align:center">${v.status === 'ok' && v.link
+        ? `<input type="checkbox" class="chk-placa" data-placa="${v.placa}" data-link="${v.link}" onchange="atualizarSelecao()">`
+        : ''
+      }</td>
       <td style="font-weight:500">${v.placa}</td>
       <td style="color:#666">${v.local}</td>
       <td style="color:#666">${v.marca}</td>
@@ -264,12 +280,71 @@ function renderTabela() {
         ${v.status === 'ok' ? '✓ Concluído' : '● Pendente'}
       </span></td>
       <td>${v.status === 'ok' && v.link
-        ? `<a href="${v.link}" target="_blank" class="btn-dl">&#8595; Baixar</a>`
+        ? `<a href="${v.link}" target="_blank" class="btn-dl">↓ Baixar</a>`
         : v.status === 'ok'
           ? `<span style="color:#bbb;font-size:12px">Sem link</span>`
           : `<span style="color:#bbb;font-size:12px">—</span>`
       }</td>
     </tr>`).join('');
+
+  atualizarSelecao();
+}
+
+function atualizarSelecao() {
+  const checks = document.querySelectorAll('.chk-placa:checked');
+  const barra = document.getElementById('barra-selecao');
+  const count = checks.length;
+  document.getElementById('sel-count').textContent = `${count} selecionado${count !== 1 ? 's' : ''}`;
+  barra.style.display = count > 0 ? 'flex' : 'none';
+}
+
+function toggleTodos(cb) {
+  document.querySelectorAll('.chk-placa').forEach(c => c.checked = cb.checked);
+  atualizarSelecao();
+}
+
+function limparSelecao() {
+  document.querySelectorAll('.chk-placa').forEach(c => c.checked = false);
+  const ca = document.getElementById('check-all');
+  if (ca) ca.checked = false;
+  atualizarSelecao();
+}
+
+async function downloadSelecionados() {
+  const checks = document.querySelectorAll('.chk-placa:checked');
+  if (!checks.length) return;
+
+  const btn = document.querySelector('[onclick="downloadSelecionados()"]');
+  btn.textContent = 'Preparando ZIP...';
+  btn.disabled = true;
+
+  try {
+    const zip = new JSZip();
+    for (const chk of checks) {
+      const placa = chk.dataset.placa;
+      const link = chk.dataset.link;
+      const fileId = link.match(/\/d\/([^\/]+)\//)?.[1];
+      if (!fileId) continue;
+      try {
+        const dlUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+        const resp = await fetch(dlUrl);
+        if (!resp.ok) continue;
+        const buf = await resp.arrayBuffer();
+        zip.file(`${placa}_ASSINADO.pdf`, buf);
+      } catch {}
+    }
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'laudos_compensar.zip';
+    a.click();
+  } catch(e) {
+    alert('Erro ao gerar ZIP: ' + e.message);
+  }
+
+  btn.textContent = '↓ Baixar selecionados';
+  btn.disabled = false;
 }
 
 function setFiltro(tipo, btn) {
