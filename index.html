@@ -176,13 +176,8 @@ async function init() {
 
     const rows = result.data;
 
-    // Detectar índice da coluna Link Laudo no cabeçalho
-    let linkIdx = 16;
-    if (rows[2]) {
-      const header = rows[2].map(c => c.trim().toLowerCase());
-      const found = header.findIndex(c => c.includes('link'));
-      if (found >= 0) linkIdx = found;
-    }
+    // Busca o link do Google Drive em qualquer coluna da linha
+    let linkIdx = -1;
     veiculos = [];
 
     for (let i = 3; i < rows.length; i++) {
@@ -195,7 +190,7 @@ async function init() {
       const ano = anoRaw.includes('/') ? anoRaw.split('/').pop().trim() : anoRaw;
       const marca = (r[8] || '').trim();
       const modelo = (r[9] || '').trim();
-      const link = (r[linkIdx] || '').trim();
+      const link = r.find(col => (col || '').includes('drive.google.com')) || '';
       veiculos.push({
         placa,
         local: (r[3] || '').trim(),
