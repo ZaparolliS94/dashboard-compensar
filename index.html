@@ -280,7 +280,11 @@ function renderTabela() {
         ${v.status === 'ok' ? '✓ Concluído' : '● Pendente'}
       </span></td>
       <td>${v.status === 'ok' && v.link
-        ? `<a href="${v.link}" target="_blank" class="btn-dl">↓ Baixar</a>`
+        ? (() => {
+            const fileId = v.link.match(/\/d\/([^\/]+)\//)?.[1] || '';
+            const dlUrl = fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : v.link;
+            return `<a href="${dlUrl}" target="_blank" class="btn-dl">↓ Baixar</a>`;
+          })()
         : v.status === 'ok'
           ? `<span style="color:#bbb;font-size:12px">Sem link</span>`
           : `<span style="color:#bbb;font-size:12px">—</span>`
@@ -315,32 +319,25 @@ async function downloadSelecionados() {
   if (!checks.length) return;
 
   const btn = document.querySelector('[onclick="downloadSelecionados()"]');
-  btn.textContent = 'Preparando ZIP...';
+  const total = checks.length;
+
+  if (total > 10) {
+    if (!confirm(`Você selecionou ${total} arquivos. O navegador vai baixar um por um. Continuar?`)) return;
+  }
+
+  btn.textContent = 'Baixando...';
   btn.disabled = true;
 
-  try {
-    const zip = new JSZip();
-    for (const chk of checks) {
-      const placa = chk.dataset.placa;
-      const link = chk.dataset.link;
-      const fileId = link.match(/\/d\/([^\/]+)\//)?.[1];
-      if (!fileId) continue;
-      try {
-        const dlUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-        const resp = await fetch(dlUrl);
-        if (!resp.ok) continue;
-        const buf = await resp.arrayBuffer();
-        zip.file(`${placa}_ASSINADO.pdf`, buf);
-      } catch {}
-    }
-
-    const blob = await zip.generateAsync({ type: 'blob' });
+  for (const chk of checks) {
+    const link = chk.dataset.link;
+    const fileId = link.match(/\/d\/([^\/]+)\//)?.[1];
+    if (!fileId) continue;
+    const dlUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
     const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'laudos_compensar.zip';
+    a.href = dlUrl;
+    a.target = '_blank';
     a.click();
-  } catch(e) {
-    alert('Erro ao gerar ZIP: ' + e.message);
+    await new Promise(r => setTimeout(r, 1500)); // delay entre downloads
   }
 
   btn.textContent = '↓ Baixar selecionados';
