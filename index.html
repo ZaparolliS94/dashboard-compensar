@@ -56,6 +56,10 @@ tr:hover td{background:#fafaf8}
 .btn-dl{display:inline-flex;align-items:center;font-size:11px;padding:3px 8px;border-radius:6px;background:#E1F5EE;color:#085041;border:0.5px solid #5DCAA5;text-decoration:none;font-weight:500}
 .btn-dl:hover{background:#9FE1CB}
 .col-placa{width:95px}.col-local{width:105px}.col-marca{width:90px}.col-modelo{}.col-ano{width:55px}.col-status{width:100px}.col-laudo{width:75px}
+.fselect{font-size:12px;padding:4px 10px;border-radius:8px;border:0.5px solid #d0d0cc;background:white;color:#666;cursor:pointer;outline:none}
+.fselect:focus{border-color:#5DCAA5}
+.badge-aprov{background:#e0f7fa;color:#00838f}
+.badge-reprov{background:#fdecea;color:#C00000}
 </style>
 </head>
 <body>
@@ -120,6 +124,15 @@ tr:hover td{background:#fafaf8}
           <button class="fbtn" onclick="setFiltro('ok',this)">Concluídos</button>
           <button class="fbtn" onclick="setFiltro('pendente',this)">Pendentes</button>
         </div>
+        <select class="fselect" id="filtro-data" onchange="renderTabela()">
+          <option value="">📅 Todas as datas</option>
+        </select>
+        <select class="fselect" id="filtro-laudo" onchange="renderTabela()">
+          <option value="">📋 Todos os resultados</option>
+          <option value="APROVADO">✅ Aprovado</option>
+          <option value="REPROVADO">❌ Reprovado</option>
+          <option value="SEM">— Sem resultado</option>
+        </select>
         <div class="search-wrap">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           <input type="text" placeholder="Buscar placa / local..." oninput="setBusca(this.value)">
@@ -146,6 +159,8 @@ tr:hover td{background:#fafaf8}
           <th class="col-marca">Marca</th>
           <th class="col-modelo">Modelo</th>
           <th class="col-ano">Ano</th>
+          <th style="width:70px">Data</th>
+          <th style="width:110px">Resultado</th>
           <th class="col-status">Status</th>
           <th class="col-laudo">Laudo</th>
         </tr>
@@ -191,6 +206,8 @@ async function init() {
       const marca = (r[8] || '').trim();
       const modelo = (r[9] || '').trim();
       const link = r.find(col => (col || '').includes('drive.google.com')) || '';
+      const dataLaudo = (r[16] || '').trim();
+      const obsLaudo  = (r[17] || '').trim().toUpperCase();
       veiculos.push({
         placa,
         local: (r[3] || '').trim(),
@@ -199,11 +216,14 @@ async function init() {
         chassi: (r[10] || '').trim(),
         ano,
         status,
-        link
+        link,
+        dataLaudo,
+        obsLaudo
       });
     }
 
     renderDashboard();
+    popularFiltroData();
     document.getElementById('updated-at').textContent =
       'Atualizado em ' + new Date().toLocaleString('pt-BR');
     show('app');
@@ -249,18 +269,31 @@ function renderDashboard() {
 }
 
 function renderTabela() {
+  const fData  = document.getElementById('filtro-data').value;
+  const fLaudo = document.getElementById('filtro-laudo').value;
   const lista = veiculos.filter(v => {
     const pf = filtroAtivo === 'todos' || v.status === filtroAtivo;
     const pb = !busca ||
       v.placa.toLowerCase().includes(busca.toLowerCase()) ||
       v.local.toLowerCase().includes(busca.toLowerCase()) ||
       v.modelo.toLowerCase().includes(busca.toLowerCase());
-    return pf && pb;
+    const pd = !fData  || v.dataLaudo === fData;
+    const pl = !fLaudo
+      || (fLaudo === 'APROVADO'  && v.obsLaudo === 'APROVADO')
+      || (fLaudo === 'REPROVADO' && v.obsLaudo === 'REPROVADO')
+      || (fLaudo === 'SEM'       && v.obsLaudo !== 'APROVADO' && v.obsLaudo !== 'REPROVADO');
+    return pf && pb && pd && pl;
   });
 
   document.getElementById('tbody').innerHTML = lista.length === 0
-    ? `<tr><td colspan="8" style="text-align:center;color:#888;padding:2rem">Nenhum veículo encontrado</td></tr>`
-    : lista.map(v => `
+    ? `<tr><td colspan="10" style="text-align:center;color:#888;padding:2rem">Nenhum veículo encontrado</td></tr>`
+    : lista.map(v => {
+      let badgeObs = '';
+      if (v.obsLaudo === 'APROVADO')  badgeObs = `<span class="badge badge-aprov">✅ Aprovado</span>`;
+      else if (v.obsLaudo === 'REPROVADO') badgeObs = `<span class="badge badge-reprov">❌ Reprovado</span>`;
+      else if (v.dataLaudo) badgeObs = `<span style="color:#bbb;font-size:12px">—</span>`;
+      else badgeObs = `<span style="color:#bbb;font-size:12px">—</span>`;
+      return `
     <tr>
       <td style="text-align:center">${v.status === 'ok' && v.link
         ? `<input type="checkbox" class="chk-placa" data-placa="${v.placa}" data-link="${v.link}" onchange="atualizarSelecao()">`
@@ -271,6 +304,8 @@ function renderTabela() {
       <td style="color:#666">${v.marca}</td>
       <td style="color:#666" title="${v.modelo}">${v.modelo}</td>
       <td style="color:#666">${v.ano || '—'}</td>
+      <td style="color:#888;font-size:12px">${v.dataLaudo || '—'}</td>
+      <td>${badgeObs}</td>
       <td><span class="badge ${v.status === 'ok' ? 'badge-ok' : 'badge-pend'}">
         ${v.status === 'ok' ? '✓ Concluído' : '● Pendente'}
       </span></td>
@@ -280,7 +315,7 @@ function renderTabela() {
           ? `<span style="color:#bbb;font-size:12px">Sem link</span>`
           : `<span style="color:#bbb;font-size:12px">—</span>`
       }</td>
-    </tr>`).join('');
+    </tr>`}).join('');
 
   atualizarSelecao();
 }
@@ -309,6 +344,18 @@ async function downloadSelecionados() {
   const checks = document.querySelectorAll('.chk-placa:checked');
   if (!checks.length) return;
   window.open('https://drive.google.com/drive/folders/1WU8nx02EvEMB54fdcOh_gMbJyTSHSHKK', '_blank');
+}
+
+function popularFiltroData() {
+  const datas = [...new Set(veiculos.map(v => v.dataLaudo).filter(Boolean))].sort();
+  const sel = document.getElementById('filtro-data');
+  // Limpar opções antigas (exceto a primeira)
+  while (sel.options.length > 1) sel.remove(1);
+  datas.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d; opt.textContent = d;
+    sel.appendChild(opt);
+  });
 }
 
 function setFiltro(tipo, btn) {
