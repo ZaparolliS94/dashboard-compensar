@@ -1,5 +1,5 @@
 Status;Prefixo;Placa;Garagem / Local;Endereço;Bairro;Cidade;Cep ;Fabricante;Modelo;Chassi;"Ano;Link Laudo;;;;;;
-Fabric./Model";Motor;RPM min;RPM max;Limite de opacidade;Data;Obs;;;;;;;;;;;;
+Fabric./Model";Motor;RPM min;RPM max;Limite de opacidade;Data;Obs;
 ;210024;EMS7482;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Fiat;Ducato;93W244F14B2053415;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;;;Link Laudo
 ;210025;EMS7483;Jaguaré;;;;;Fiat;Ducato;93W244F14B2053626;2010/2010;F1A Multijet 2.3;850;4000;0,7 m⁻¹;;;
 ;210053;EQT6605;Jaguaré;;;;;Iveco;Daily 35S14;93ZC35A01B8421221;2010/2010;FPT 2.3;850;4200;0,7 m⁻¹;14/jun;REPROVADO;https://drive.google.com/file/d/1ZpT4P_MtvWJA2moi9DCe33m0ISP8wNMr/view?usp=sharing
@@ -288,7 +288,7 @@ OK;2122762;SKE2J97;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;Sã
 ;2123282;SSR1E74;Jaguaré;;;;;Volkswagen;26-260;9536B8TD5SR001169;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;;;
 ;2123292;SSR1E81;CTRSS;;;;;Volkswagen;26-260;9536B8TD2SR001162;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;;;
 ;2123302;SSR1F36;CTRSS;;;;;Volkswagen;26-260;9536B8TD6SR020605;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;;;
-;2123312;SSR0E95;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;26-260;9536B8TD1SR001198;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;14/jun;APROVADO;https://drive.google.com/file/d/1avH6xCHrPH6NRjfcuzZijyDchXAXfjqr/view?usp=sharing
+OK;2123312;SSR0E95;Vila Maria;Av. Morvan Dias de Figueiredo, 5479;Vila Maria;São Paulo - SP;02170-000;Volkswagen;26-260;9536B8TD1SR001198;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;14/jun;APROVADO;https://drive.google.com/file/d/1avH6xCHrPH6NRjfcuzZijyDchXAXfjqr/view?usp=sharing
 ;2123322;SSR1C04;Jaguaré;;;;;Volkswagen;26-260;9536B8TD2SR001405;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;;;
 ;2123332;SSR1C73;Jaguaré;;;;;Volkswagen;26-260;9536B8TD2SR001176;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;;;
 ;2123352;SSR1E33;Jaguaré;;;;;Volkswagen;26-260;9536B8TD4SR001440;2024/2025;Cummins ISB 6.7;700;2500;1,5 m⁻¹;;;
