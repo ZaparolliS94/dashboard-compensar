@@ -195,7 +195,7 @@ async function init() {
     let linkIdx = -1;
     veiculos = [];
 
-    for (let i = 3; i < rows.length; i++) {
+    for (let i = 1; i < rows.length; i++) {
       const r = rows[i];
       const placa = (r[2] || '').trim();
       if (!placa || placa.toLowerCase() === 'placa') continue;
